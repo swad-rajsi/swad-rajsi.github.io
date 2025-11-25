@@ -4,7 +4,7 @@ description: Bookmark this to keep an eye on my project updates!
 title: "Taste Shahi"
 description: "Delicious recipes and cooking tips"
 baseurl: ""    # If it's user site; for project site, put /repo-name
-url: "https://swad-rajsi.github.io"
+# url: "https://swad-rajsi.github.io"
 
 theme: minima   # or choose another, or use `remote_theme`
 
