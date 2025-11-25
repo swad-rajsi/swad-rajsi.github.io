@@ -1,7 +1,9 @@
 ---
 layout: default
-title: "About Me"
+title: "About"
 permalink: /about/
 ---
 
-Hi, I'm **Your Name**, and I love cooking. This blog is where I share my recipes, tips, and the stories behind the food.
+# About Me
+
+Cooking is my passion. From royal feasts to quick meals, this blog captures my cooking moods, inspirations, and new recipes.
