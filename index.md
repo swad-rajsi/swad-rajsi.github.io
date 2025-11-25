@@ -1,12 +1,23 @@
 ---
 layout: default
-title: "Welcome to My Cooking Blog"
+title: "Home"
 ---
 
-# Welcome!
+# Welcome to My Cooking Blog 👩‍🍳🍲
 
-Here you'll find my favorite recipes, cooking tips, and food adventures.
+Explore delicious vegetarian recipes, modern twists, and quick meals.
 
-- [Recipes](/recipes/)  
-- [About me](/about/)  
-- [Contact](/contact/)
+👉 Browse all **[Recipes](/recipes/)**  
+👉 Learn more **[About Me](/about/)**  
+👉 Get in touch **[Contact](/contact/)**
+
+---
+## Latest Recipes
+
+<ul>
+  {% for recipe in site.recipes %}
+    <li>
+      <a href="{{ recipe.url }}">{{ recipe.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
