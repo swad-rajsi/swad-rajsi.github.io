@@ -4,8 +4,8 @@ title: "Contact"
 permalink: /contact/
 ---
 
-You can reach me at:
+# Contact Me
 
-- Email: yourname@example.com  
-- Instagram: [@yourhandle](https://instagram.com/yourhandle)  
-- Or fill out the form below (if you integrate a form service)
+Email: yourname@example.com  
+
+Instagram: [@yourhandle](https://instagram.com)
