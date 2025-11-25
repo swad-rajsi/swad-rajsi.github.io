@@ -1,0 +1,41 @@
+---
+# no front matter needed here
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>{{ page.title }} - Recipes</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  {% include header.html %}
+  <main class="recipe">
+    <h1>{{ page.title }}</h1>
+    {% if page.image %}
+      <img src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+    {% endif %}
+
+    {{ content }}
+
+    {% if page.ingredients %}
+      <h2>Ingredients</h2>
+      <ul>
+        {% for item in page.ingredients %}
+          <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+
+    {% if page.steps %}
+      <h2>Instructions</h2>
+      <ol>
+        {% for step in page.steps %}
+          <li>{{ step }}</li>
+        {% endfor %}
+      </ol>
+    {% endif %}
+  </main>
+  {% include footer.html %}
+</body>
+</html>
