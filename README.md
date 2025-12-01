@@ -2,5 +2,5 @@
 Cooking post
 
 bundle install
-bundle exec jekyll serve
+bundle exec jekyll serve --incremental
 localhost:4000
