@@ -12,8 +12,8 @@ collections:
 
 markdown: kramdown
 
-paginate: 6
-paginate_path: "/page:num/"
+#paginate: 6
+#paginate_path: "/page:num/"
 
 plugins:
   - jekyll-paginate
