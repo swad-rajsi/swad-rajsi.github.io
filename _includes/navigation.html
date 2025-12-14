@@ -1,6 +1,15 @@
-<nav class="nav">
+<h3 style="font-size:90px;font-weight:100; color:#eba0eb;font-family:'Damion', serif;text-align:center;font-style:italic;margin:0;padding-left: 16px;padding-right: 16px;padding-top: 8px; padding-bottom: 8px;"> Taste Shahi </h3>
+<div class="nav-toggle" style="display:flex;justify-content:center;gap:20px;padding-bottom:12px;padding-top: 0px;">
+  <nav class="nav">
+  <a class="{% if page.url == '/' %}swad-rajsi-nav-active{% else %}swad-rajsi-nav{% endif %}" href="{{ '/' | relative_url }}">HOME</a>
+  <a class="{% if page.url contains '/about' %}swad-rajsi-nav-active{% else %}swad-rajsi-nav{% endif %}" href="{{ '/about/' | relative_url }}">ABOUT</a>
+  <a class="{% if page.url contains '/recipes' %}swad-rajsi-nav-active{% else %}swad-rajsi-nav{% endif %}" href="{{ '/recipes/' | relative_url }}">RECIPES</a>
+  <a class="{% if page.url contains '/contact' %}swad-rajsi-nav-active{% else %}swad-rajsi-nav{% endif %}" href="{{ '/contact/' | relative_url }}">CONTACT</a>
+</nav>
+<!-- <nav class="nav">
   <a href="{{ '/' | relative_url }}">Home</a>
   <a href="{{ '/recipes/' | relative_url }}">Recipes</a>
   <a href="{{ '/about/' | relative_url }}">About</a>
   <a href="{{ '/contact/' | relative_url }}">Contact</a>
-</nav>
+</nav> -->
+</div>
