@@ -69,3 +69,32 @@ main {
   padding-top: 8px;
   padding-bottom: 8px;
 }
+
+.swad-rajsi-read-now {
+  font-size: 14px;
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 32px;
+  padding-left: 32px;
+  font-family: serif;
+  transition: all 0.3s;
+  letter-spacing: 0.214em;
+}
+
+.swad-rajsi-read-now:hover {
+  font-size: 14px;
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 32px;
+  padding-left: 32px;
+  font-family: serif;
+  transition: all 0.3s;
+  letter-spacing: 0.214em;
+  box-shadow: 0px 10px 10px -10px black;
+}
