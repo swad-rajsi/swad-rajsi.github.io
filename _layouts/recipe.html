@@ -11,23 +11,84 @@
 
   <main class="recipe">
 
-    <h1>{{ page.title }}</h1>
-
-    {% if page.image %}
+    <div class="swad-rajsi-centre-display"
+      style="margin-top:-30px;margin-bottom:10px;color: #d25fd2ff;font-size:30px;font-family:Georgia;justify-content:left !important;">
+      {{page.title}}</div>
+    <div style="display: flex;justify-content: center;align-items: center;">
+      {% if page.image %}
       <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" class="recipe-img">
-    {% endif %}
+      {% endif %}
+    </div>
+    <div style="font-size: 1em;
+    border-style: double;
+    border-width: 1px;
+    border-color: #417505;
+    padding: 10px;
+    background-color: rgb(238, 233, 233);
+    max-width: 950px;">
+      <div style="padding: 10px;font-size: 20px;font-family:Georgia;color: #d25fd2ff;">Table of Contents</div>
+      <div style="padding: 5px;"><a href="#Ingredients_Pancakes" style="text-decoration: none;"><span
+            style="padding-right:10px;">1).</span><span>Ingredients</span></a></div>
+      <div style="padding: 5px;"><a href="#Steps_Pancakes" style="text-decoration: none;"><span
+            style="padding-right:10px;">2).</span><span>Steps</span></a></div>
+    </div>
 
-    <h2>Ingredients</h2>
-    <ul>
-      {% for item in page.ingredients %}
-        <li>{{ item }}</li>
-      {% endfor %}
-    </ul>
+    <div id="#Ingredients_Pancakes" style="font-size: 1em;
+    border-style: double;
+    border-width: 1px;
+    border-color: #417505;
+    padding: 10px;
+    background-color: bisque;
+    max-width: 950px;margin-top: 20px;">
+      <div style="padding: 10px;font-size: 20px;font-family:Georgia;color: #d25fd2ff;">Ingredients</div>
+      <div>
+        <table style="border-style: dotted; 
+    border-width: 2px;border-color:gray;padding:10px;width:100%; font-size: 13px; margin-bottom:20px;">
+          <tr style="font-weight:bold;">
+            <td class="swad-rajsi-td-border">Preparation Time</td>
+            <td class="swad-rajsi-td-border">Cook Time</td>
+            <td class="swad-rajsi-td-border">Course</td>
+            <td class="swad-rajsi-td-border">Flavour</td>
+            <td class="swad-rajsi-td-border">Type</td>
+            <td class="swad-rajsi-td-border" style="border-right: none !important;">Serving</td>
+          </tr>
+          <tr>
+            <td class="swad-rajsi-td-border">5 minutes</td>
+            <td class="swad-rajsi-td-border">10 minutes</td>
+            <td class="swad-rajsi-td-border">Breakfast</td>
+            <td class="swad-rajsi-td-border">Sweet</td>
+            <td class="swad-rajsi-td-border">Continental</td>
+            <td class="swad-rajsi-td-border" style="border-right: none !important;">
+              <div>
+                <div class="serving-box">
+                  <div id="servingValue" style="padding-right:10px;text-align: center;margin-bottom: 5px;">4</div>
+                </div>
+                <div class="serving-button-group">
+                  <button class="serving-btn active" onclick="setValue(1, this)">1x</button>
+                  <button class="serving-btn" onclick="setValue(2, this)">2x</button>
+                  <button class="serving-btn" onclick="setValue(3, this)">3x</button>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div>
+         <div style="font-size: 15px;font-weight: bold;">For Batter</div>
+        <ul style="margin-top: 5px;">
+          {% for item in page.ingredients %}
+          <li class="swad-rajsi-ingredients">{{ item }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
 
-    <h2>Steps</h2>
-    <ol>
+    <div id="#Steps_Pancakes"
+      style="padding:10px;color: #d25fd2ff;font-size:20px;font-family:Georgia;justify-content:left !important;">
+      Steps</div>
+    <ol style="margin-top: 0px;">
       {% for step in page.steps %}
-        <li>{{ step }}</li>
+      <li class="swad-rajsi-ingredients">{{ step }}</li>
       {% endfor %}
     </ol>
 
@@ -37,4 +98,19 @@
 
   {% include footer.html %}
 </body>
+<script>
+  function setValue(value, element) {
+    // Update text
+    document.getElementById("servingValue").innerText = value;
+
+    // Remove active class from all buttons
+    document.querySelectorAll(".serving-btn").forEach(btn => {
+      btn.classList.remove("active");
+    });
+
+    // Add active class to clicked button
+    element.classList.add("active");
+  }
+</script>
+
 </html>

@@ -20,8 +20,15 @@ main {
 }
 
 .recipe-img {
-  max-width: 100%;
+  max-width: 50%;
   margin-bottom: 20px;
+  max-height: 30%;
+  border-radius: 20px;
+}
+
+.swad-rajsi-ingredients {
+  color: darkslategrey;
+  font-family: arial;
 }
 
 .footer {
@@ -57,12 +64,12 @@ main {
 }
 
 .swad-rajsi-heading {
-  font-size: 90px;
+  font-size: 60px;
   font-weight: 100;
   color: #eba0eb;
   font-family: 'Damion', serif;
   text-align: center;
-  font-style: italic;
+  font-style: bold;
   margin: 0;
   padding-left: 16px;
   padding-right: 16px;
@@ -99,11 +106,26 @@ main {
   box-shadow: 0px 10px 10px -10px black;
 }
 
+.swad-rajsi-recipe-link {
+  font-size: 16px;
+  font-family: sans-serif;
+  color: darkslategray;
+  text-decoration: none;
+}
+
+.swad-rajsi-recipe-link:hover {
+  font-size: 16px;
+  font-family: sans-serif;
+  color: #c76bc7;
+  text-decoration: none;
+}
+
 .swad-rajsi-centre-display {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 /* style added, but overridden by something- not working
 input:focus {
   border: 1px solid red !important;
@@ -117,12 +139,52 @@ input::placeholder {
 }
 
 .joining-mailing-list-success {
-margin-top: 12px;
-color: green;
+  margin-top: 12px;
+  color: green;
 }
 
 
 .joining-mailing-list-error {
-margin-top: 12px;
-color: red;
+  margin-top: 12px;
+  color: red;
+}
+
+.swad-rajsi-td-border {
+  padding:5px;
+  padding-left:15px;
+  width:16.66%;
+  border-right: dotted;
+  border-color:gray;
+  border-width: 2px;
+}
+/* 
+.value-box {
+  text-align: center;
+  margin: 20px 0;
+}
+
+#servingValue {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 15px;
+} */
+
+.serving-button-group {
+  display: flex;
+  justify-content: center;
+  gap:0px
+}
+
+.serving-btn {
+  padding: 10px 20px;
+  font-size: 12px;
+  border: 1px solid #c91010;
+  background: #fff;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.serving-btn.active {
+  background: #a10b0b;
+  color: #fff;
 }
