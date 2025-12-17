@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <title>{{ page.title }} | Recipes</title>
@@ -53,15 +54,16 @@
             <td class="swad-rajsi-td-border" style="border-right: none !important;">Serving</td>
           </tr>
           <tr>
-            <td class="swad-rajsi-td-border">5 minutes</td>
-            <td class="swad-rajsi-td-border">10 minutes</td>
-            <td class="swad-rajsi-td-border">Breakfast</td>
-            <td class="swad-rajsi-td-border">Sweet</td>
-            <td class="swad-rajsi-td-border">Continental</td>
+            <td class="swad-rajsi-td-border">{{page.prep_time}}</td>
+            <td class="swad-rajsi-td-border">{{page.cook_time}}</td>
+            <td class="swad-rajsi-td-border">{{page.course}}</td>
+            <td class="swad-rajsi-td-border">{{page.flavour}}</td>
+            <td class="swad-rajsi-td-border">{{page.food_type}}</td>
             <td class="swad-rajsi-td-border" style="border-right: none !important;">
               <div>
                 <div class="serving-box">
-                  <div id="servingValue" style="padding-right:10px;text-align: center;margin-bottom: 5px;">4</div>
+                  <div id="servingValue" style="padding-right:10px;text-align: center;margin-bottom: 5px;">
+                    {{page.serving}}</div>
                 </div>
                 <div class="serving-button-group">
                   <button class="serving-btn active" onclick="setValue(1, this)">1x</button>
@@ -74,10 +76,17 @@
         </table>
       </div>
       <div>
-         <div style="font-size: 15px;font-weight: bold;">For Batter</div>
-        <ul style="margin-top: 5px;">
-          {% for item in page.ingredients %}
-          <li class="swad-rajsi-ingredients">{{ item }}</li>
+        <ul  style="padding-left:20px;">
+          {% for section in page.ingredients %}
+          <li style="font-size: 15px;padding-bottom:10px;">
+            <strong>{{ section.heading }}</strong>
+
+            <ul style="margin-top: 5px;">
+              {% for item in section.items %}
+              <li class="swad-rajsi-ingredients">{{ item }}</li>
+              {% endfor %}
+            </ul>
+          </li>
           {% endfor %}
         </ul>
       </div>
