@@ -36,8 +36,8 @@ ingredients:
         unit: 
         name: Blueberry sauce
       - qty: 1
-        unit: 
-        name: Maple syrup
+        unit: pinch of
+        name: Sugar
         scale: false
 steps:
   - In a bowl, mix flour, sugar, and baking powder.
