@@ -28,15 +28,17 @@ ingredients:
       - qty: 1
         unit: 
         name: egg
+        scale: true
 
   - heading: Decoration
     items:
       - qty: 
         unit: 
         name: Blueberry sauce
-      - qty: 
+      - qty: 1
         unit: 
         name: Maple syrup
+        scale: false
 steps:
   - In a bowl, mix flour, sugar, and baking powder.
   - In another bowl, whisk milk and egg.

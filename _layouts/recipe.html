@@ -84,7 +84,8 @@
             <ul style="margin-top: 5px;">
               {% for item in section.items %}
               <li class="swad-rajsi-ingredients ingredient-item" data-qty="{{ item.qty }}" data-unit="{{ item.unit }}"
-                data-name="{{ item.name }}"><span class="qty">{{ item.qty }}</span> {{ item.unit }} {{ item.name }}</li>
+                data-scale="{{ item.scale }}" data-name="{{ item.name }}"><span class="qty">{{ item.qty
+                  }}</span> {{ item.unit }} {{ item.name }}</li>
               {% endfor %}
             </ul>
           </li>
@@ -124,7 +125,10 @@
   document.querySelectorAll('.ingredient-item').forEach(item => {
     //console.log(item.dataset.qty + " " + item.dataset.unit + " " + item.dataset.name);
     if (item.dataset.qty !== undefined && item.dataset.qty !== '') {
+      const scale = item.dataset.scale !== 'false';
       const baseQty = parseFloat(item.dataset.qty);
+      // Skip if not scalable or not numeric
+      if (!scale || isNaN(baseQty)) return;
       let newQty = baseQty * value;
       // Optional: round nicely
       newQty = Number.isInteger(newQty) ? newQty : newQty.toFixed(1);
