@@ -6,22 +6,37 @@ cook_time: 10 minutes
 course: Breakfast
 flavour: Sweet
 food_type: Continental
+serving_original: 4
 serving: 4
 permalink: /recipes/fluffy-pancakes/
 image: /assets/images/recipes/pancakes.jpg
 ingredients:
   - heading: Main Ingredients
     items:
-      -  1 cup flour
-      - 2 tablespoons sugar
-      - 1 teaspoon baking powder
-      - 1 cup milk
-      - 1 egg
+      - qty: 1
+        unit: cup
+        name: flour
+      - qty: 2
+        unit: tablespoon
+        name: sugar
+      - qty: 1
+        unit: teaspoon
+        name: baking powder
+      - qty: 1
+        unit: cup
+        name: milk
+      - qty: 1
+        unit: 
+        name: egg
 
   - heading: Decoration
     items:
-      - Blueberry sauce
-      - Maple syrup
+      - qty: 
+        unit: 
+        name: Blueberry sauce
+      - qty: 
+        unit: 
+        name: Maple syrup
 steps:
   - In a bowl, mix flour, sugar, and baking powder.
   - In another bowl, whisk milk and egg.

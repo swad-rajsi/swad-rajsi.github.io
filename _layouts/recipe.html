@@ -76,14 +76,15 @@
         </table>
       </div>
       <div>
-        <ul  style="padding-left:20px;">
+        <ul style="padding-left:20px;">
           {% for section in page.ingredients %}
           <li style="font-size: 15px;padding-bottom:10px;">
             <strong>{{ section.heading }}</strong>
 
             <ul style="margin-top: 5px;">
               {% for item in section.items %}
-              <li class="swad-rajsi-ingredients">{{ item }}</li>
+              <li class="swad-rajsi-ingredients ingredient-item" data-qty="{{ item.qty }}" data-unit="{{ item.unit }}"
+                data-name="{{ item.name }}"><span class="qty">{{ item.qty }}</span> {{ item.unit }} {{ item.name }}</li>
               {% endfor %}
             </ul>
           </li>
@@ -109,16 +110,28 @@
 </body>
 <script>
   function setValue(value, element) {
-    // Update text
-    document.getElementById("servingValue").innerText = value;
+    const baseServing = {{ page.serving_original }};
+  // Update text
+  document.getElementById("servingValue").innerText = value * baseServing;
 
-    // Remove active class from all buttons
-    document.querySelectorAll(".serving-btn").forEach(btn => {
-      btn.classList.remove("active");
-    });
+  // Remove active class from all buttons
+  document.querySelectorAll(".serving-btn").forEach(btn => {
+    btn.classList.remove("active");
+  });
 
-    // Add active class to clicked button
-    element.classList.add("active");
+  // Add active class to clicked button
+  element.classList.add("active");
+  document.querySelectorAll('.ingredient-item').forEach(item => {
+    //console.log(item.dataset.qty + " " + item.dataset.unit + " " + item.dataset.name);
+    if (item.dataset.qty !== undefined && item.dataset.qty !== '') {
+      const baseQty = parseFloat(item.dataset.qty);
+      let newQty = baseQty * value;
+      // Optional: round nicely
+      newQty = Number.isInteger(newQty) ? newQty : newQty.toFixed(1);
+      item.querySelector('.qty').innerText = newQty;
+    }
+  });
+
   }
 </script>
 
