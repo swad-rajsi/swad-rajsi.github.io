@@ -224,17 +224,18 @@ input::placeholder {
 .recipe-gallery::-webkit-scrollbar {
   display: none;
 }
+
 /* End recipe image gallery*/
 
 /* Start pagination in recipes*/
 .multi-column-list ul {
   /* Set the number of columns you want */
   column-count: 4;
-  height:200px;
-  column-fill:auto;
+  height: 200px;
+  column-fill: auto;
   /* Add space between the columns */
   column-gap: 30px;
-  
+
   /* Ensure the list stays inside the columns */
   list-style-position: inside;
   padding: 0;
@@ -253,6 +254,7 @@ input::placeholder {
     column-count: 2;
   }
 }
+
 /* End pagination in recipes*/
 
 /* Start recipe search filter*/
@@ -270,7 +272,7 @@ input::placeholder {
   cursor: pointer;
   border-radius: 4px;
   border: 1px solid #ccc;
-  padding:10px 7px 10px 7px !important;
+  padding: 10px 7px 10px 7px !important;
 }
 
 .clear-filters {
@@ -284,4 +286,75 @@ input::placeholder {
 .clear-filters:hover {
   color: #005fa3;
 }
+
 /* End recipe search filter*/
+
+/*Start Contact us page*/
+.contact-form {
+  max-width: 90%;
+  display: block !important;
+  margin: 20px 0;
+  font-family: sans-serif;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  padding: 15px;
+  background-color: #fae0fa;
+}
+
+.contact-me-form-group {
+  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-left: 40px;
+}
+
+.contact-me-form-group label {
+  display: block;
+  padding-left:10px;
+}
+
+/* The Underline Effect */
+.contact-me-underline-input {
+  width: 95%;
+  border: none;
+  border-bottom: 1px solid #333;
+  /* The "_______" line */
+  outline: none;
+  background: transparent;
+  margin-right: 20px;
+  padding: 8px;
+  padding-top: 5px;
+  padding-left:0px;
+  vertical-align: middle;
+  color: darkslategray;
+  transition: border-color 0.3s;
+  font-size: 15px;
+  font-family: arial;
+}
+
+/* Change the underline color to red if the input is invalid and the user has touched it */
+.contact-me-underline-input:invalid:focus {
+  border-bottom: 2px solid #ff4d4d;
+}
+
+/* Optional: Add a small error hint below the input */
+.underline-input:invalid:not(:placeholder-shown) {
+  border-bottom-color: #ff4d4d;
+}
+
+/* The 5-line Box */
+.contact-me-message-box {
+  width: 95%;
+  border: 1px solid #333;
+  border-radius: 4px;
+  padding: 10px;
+  resize: none;
+  font-size: 15px;
+  font-family: arial;
+  color: darkslategray;
+  /* Prevents manual resizing */
+  overflow-y: auto;
+  /* Ensures scrollable if text exceeds 5 lines */
+  display: block;
+  margin-top:20px;
+}
+/*End Contact us page*/
