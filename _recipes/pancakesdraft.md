@@ -1,7 +1,7 @@
 ---
 layout: recipe
-title: "Fluffy Pancakes"
-published: true
+title: "Fluffy Pancakes 3"
+published: false
 prep_time: 5 minutes
 cook_time: 10 minutes
 course: Breakfast
@@ -9,7 +9,7 @@ flavour: Sweet
 food_type: Continental
 serving_original: 4
 serving: 4
-permalink: /recipes/fluffy-pancakes/
+permalink: /recipes/fluffy-pancakes-/
 image: /assets/images/recipes/pancakes.jpg
 ingredients:
   - heading: Main Ingredients

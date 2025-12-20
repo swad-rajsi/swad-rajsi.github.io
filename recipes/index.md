@@ -7,7 +7,7 @@ permalink: /recipes/
 <div class="swad-rajsi-centre-display" style="margin-top:-30px;margin-bottom:10px;color: #d25fd2ff;font-size:20px;font-family:Georgia;justify-content:left !important;" >
 All Recipes
 </div>
-
+<!-- <h3>DEBUG: Total recipes = {{ site.recipes | size }}</h3> -->
 <ul>
 {% for recipe in site.recipes %}
   <li>

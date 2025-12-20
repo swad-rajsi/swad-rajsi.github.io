@@ -17,7 +17,7 @@
       {{page.title}}</div>
     <div style="display: flex;justify-content: center;align-items: center;">
       {% if page.image %}
-      <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" class="recipe-img">
+      <img src="{{ page.image | relative_url }}" onerror="this.style.display='none'" class="recipe-img">
       {% endif %}
     </div>
     <div style="font-size: 1em;
@@ -26,7 +26,7 @@
     border-color: #417505;
     padding: 10px;
     background-color: rgb(238, 233, 233);
-    max-width: 950px;">
+    max-width: 950px;border-radius: 4px;">
       <div style="padding: 10px;font-size: 20px;font-family:Georgia;color: #d25fd2ff;">Table of Contents</div>
       <div style="padding: 5px;"><a href="#Ingredients" style="text-decoration: none;"><span
             style="padding-right:10px;">1).</span><span>Ingredients</span></a></div>
@@ -40,7 +40,7 @@
     border-color: #417505;
     padding: 10px;
     background-color: bisque;
-    max-width: 950px;margin-top: 20px;">
+    max-width: 950px;margin-top: 20px;border-radius: 4px;">
       <div style="padding: 10px;font-size: 20px;font-family:Georgia;color: #d25fd2ff;">Ingredients</div>
       <div>
         <table style="border-style: dotted; 
