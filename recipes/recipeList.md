@@ -52,10 +52,9 @@ All Recipes
 
     <a href="#" id="clearFilters" class="clear-filters">Clear Filters</a>
     </div>
-    <div id="recipeList"></div>
+    <div id="recipeList" class="multi-column-list" style="margin-top:20px;"></div>
 
 </div>
-
 
 <script>
   const recipes = [

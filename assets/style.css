@@ -190,6 +190,7 @@ input::placeholder {
   color: #fff;
 }
 
+/* Start recipe image gallery*/
 .recipe-gallery {
   display: flex;
   gap: 12px;
@@ -223,7 +224,38 @@ input::placeholder {
 .recipe-gallery::-webkit-scrollbar {
   display: none;
 }
+/* End recipe image gallery*/
 
+/* Start pagination in recipes*/
+.multi-column-list ul {
+  /* Set the number of columns you want */
+  column-count: 4;
+  height:200px;
+  column-fill:auto;
+  /* Add space between the columns */
+  column-gap: 30px;
+  
+  /* Ensure the list stays inside the columns */
+  list-style-position: inside;
+  padding: 0;
+  margin: 0;
+}
+
+/* Optional: Prevent list items from breaking across columns */
+.multi-column-list li {
+  break-inside: avoid;
+  padding-bottom: 5px;
+}
+
+/* Optional: Make it responsive for mobile */
+@media (max-width: 600px) {
+  .multi-column-list ul {
+    column-count: 2;
+  }
+}
+/* End pagination in recipes*/
+
+/* Start recipe search filter*/
 .recipe-search input,
 .recipe-search select {
   margin-right: 10px;
@@ -250,3 +282,4 @@ input::placeholder {
 .clear-filters:hover {
   color: #005fa3;
 }
+/* End recipe search filter*/
