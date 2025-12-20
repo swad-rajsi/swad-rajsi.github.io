@@ -3,8 +3,8 @@ layout: recipe
 title: "Fluffy Pancakes"
 published: true
 prep_time: 5 minutes
-cook_time: 10 minutes
-total_time: 15  # in minutes for filter
+cook_time: 15 minutes
+total_time: 20  # in minutes for filter
 course: Breakfast
 flavour: Sweet
 food_type: Continental
@@ -15,37 +15,43 @@ image: /assets/images/recipes/pancakes.jpg
 ingredients:
   - heading: Main Ingredients
     items:
-      - qty: 1
+      - qty: 3/4
         unit: cup
-        name: flour
-      - qty: 2
+        name: all-purpose flour
+      - qty: 1/2
         unit: tablespoon
-        name: sugar
+        name: white sugar, powdered
       - qty: 1
         unit: teaspoon
         name: baking powder
-      - qty: 1
+      - qty: 1/8
+        unit: teaspoon
+        name: salt, or as per taste
+      - qty: 3/4
         unit: cup
         name: milk
       - qty: 1
+        unit: tablespoons
+        name: butter, melted
+      - qty: 1
         unit: 
         name: egg
-        scale: true
 
-  - heading: Decoration
+  - heading: Toppings & Garnish
     items:
       - qty: 
         unit: 
-        name: Blueberry sauce
-      - qty: 1
-        unit: pinch of
-        name: Sugar
+        name: Maple Syrup/ Honey as per your taste
         scale: false
+      
 steps:
-  - In a bowl, mix flour, sugar, and baking powder.
-  - In another bowl, whisk milk and egg.
-  - Combine wet and dry ingredients.
-  - Heat a skillet and pour 1/4 cup batter, cook until golden.
+  - In a bowl, sift the dry ingredients together.
+  - In another bowl, whisk milk, butter and egg to make smooth blend. You can also use fork or spoon here.
+  - Add the wet ingredients to dry ones. Stir to combine.
+  - Heat a griddle/pan at medium heat. Usually non-stick ones work better for me.
+  - Scoop some (1/4 cup) batter onto the pan.
+  - Cook for two or three minutes, then flip.
+  - Continue cooking until light brown on both sides.
 ---
 
-These pancakes are light, fluffy, and perfect for weekend breakfasts. You can top them with syrup, fruit, or butter.
+These pancakes are light, fluffy, and perfect for weekend breakfasts. You can add chocolate chips or your favourite berries to add that fun part. You can top them with syrup, fruit, butter or a dallop of whipping cream.

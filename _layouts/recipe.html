@@ -126,12 +126,24 @@
     //console.log(item.dataset.qty + " " + item.dataset.unit + " " + item.dataset.name);
     if (item.dataset.qty !== undefined && item.dataset.qty !== '') {
       const scale = item.dataset.scale !== 'false';
-      const baseQty = parseFloat(item.dataset.qty);
+      qty = item.dataset.qty.trim();
+      var baseQty = Number(qty);
+      if (qty.includes('/')) {
+        const parts = qty.split('/');
+        if (parts.length === 2) {
+          const numerator = Number(parts[0]);
+          const denominator = Number(parts[1]);
+          if (!isNaN(numerator) && !isNaN(denominator) && denominator !== 0) {
+            baseQty = numerator / denominator;
+          }
+        }
+      }
+      //console.log("Base Qty: " + baseQty + ", Scale: " + scale);
       // Skip if not scalable or not numeric
       if (!scale || isNaN(baseQty)) return;
       let newQty = baseQty * value;
       // Optional: round nicely
-      newQty = Number.isInteger(newQty) ? newQty : newQty.toFixed(1);
+      //newQty = Number.isInteger(newQty) ? newQty : newQty.toFixed(1);
       item.querySelector('.qty').innerText = newQty;
     }
   });

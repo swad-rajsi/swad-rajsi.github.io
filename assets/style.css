@@ -28,7 +28,8 @@ main {
 
 .swad-rajsi-ingredients {
   color: darkslategrey;
-  font-family: arial;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
 }
 
 .footer {
