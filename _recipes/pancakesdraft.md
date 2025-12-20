@@ -4,6 +4,7 @@ title: "Fluffy Pancakes Draft"
 published: false
 prep_time: 5 minutes
 cook_time: 10 minutes
+total_time: 40  # in minutes for filter
 course: Lunch
 flavour: Salty
 food_type: Indian

@@ -37,6 +37,19 @@ All Recipes
         {% endfor %}
     </select>
 
+    <select id="durationFilter" class="recipe-search-select">
+      <option value="144000">Cook under:(Time)</option>
+      <option value="15">15 minutes</option>
+      <option value="30">30 minutes</option>
+      <option value="45">45 minutes</option>
+      <option value="60">1 Hour</option>
+      <option value="90">1.5 Hours</option>
+      <option value="120">2 Hours</option>
+      <option value="480">8 Hours</option>
+      <option value="1440">24 Hours</option>
+    </select>
+
+
     <a href="#" id="clearFilters" class="clear-filters">Clear Filters</a>
     </div>
     <div id="recipeList"></div>
@@ -45,66 +58,69 @@ All Recipes
 
 
 <script>
-    const recipes = [
-        {% for recipe in site.recipes %}
-    {
-        "title": "{{ recipe.title | escape }}",
-        "url": "{{ recipe.url | relative_url }}",
-        "flavour": "{{ recipe.flavour | escape }}",
-        "food_type": "{{ recipe.food_type | escape }}",
-        "course": "{{ recipe.course | escape }}"
-    } {% if forloop.last == false %}, {% endif %}
+  const recipes = [
+    {% for recipe in site.recipes %}
+      {
+          "title": "{{ recipe.title | escape }}",
+          "url": "{{ recipe.url | relative_url }}",
+          "flavour": "{{ recipe.flavour | escape }}",
+          "food_type": "{{ recipe.food_type | escape }}",
+          "course": "{{ recipe.course | escape }}",
+          "total_time":{{ recipe.total_time }}
+      } {% if forloop.last == false %}, {% endif %}
     {% endfor %}
-];
+  ];
 
-    const searchInput = document.getElementById("searchInput");
-    const flavourFilter = document.getElementById("flavourFilter");
-    const foodTypeFilter = document.getElementById("foodTypeFilter");
-    const courseFilter = document.getElementById("courseFilter");
-    const recipeList = document.getElementById("recipeList");
-    const clearFilters = document.getElementById("clearFilters");
+  const searchInput = document.getElementById("searchInput");
+  const flavourFilter = document.getElementById("flavourFilter");
+  const foodTypeFilter = document.getElementById("foodTypeFilter");
+  const courseFilter = document.getElementById("courseFilter");
+  const durationFilter = document.getElementById("durationFilter");
+  const recipeList = document.getElementById("recipeList");
+  const clearFilters = document.getElementById("clearFilters");
 
-    function renderRecipes(list) {
-        recipeList.innerHTML = `
-    <ul>
-      ${list.map(r => `
-        <li>
-          <a href="${r.url}" class="swad-rajsi-recipe-link">${r.title}</a>
-        </li>
-      `).join('')}
-    </ul>
-  `;
-    }
+  function renderRecipes(list) {
+      recipeList.innerHTML = `
+        <ul>
+          ${list.map(r => `
+            <li>
+              <a href="${r.url}" class="swad-rajsi-recipe-link">${r.title}</a>
+            </li>
+          `).join('')}
+        </ul>
+      `;
+  }
 
-    // Initial render
-    renderRecipes(recipes);
+  // Initial render
+  renderRecipes(recipes);
 
-    function filterRecipes() {
-        // const searchText = searchInput.value.toLowerCase();
-        const flavour = flavourFilter.value.toLowerCase();
-        const food_type = foodTypeFilter.value.toLowerCase();
-        const course = courseFilter.value.toLowerCase();
-        const filtered = recipes.filter(r => {
-            // const matchesText = r.title.toLowerCase().includes(searchText);
-            const matchesFlavour = flavour === "" || r.flavour.toLowerCase().includes(flavour);
-            const matchesFoodType = food_type === "" || r.food_type.toLowerCase().includes(food_type);
-            const matchesCourse = course === "" || r.course.toLowerCase().includes(course);
-            return matchesFlavour && matchesFoodType && matchesCourse;
-        });
+  function filterRecipes() {
+    const flavour = flavourFilter.value.toLowerCase();
+    const food_type = foodTypeFilter.value.toLowerCase();
+    const course = courseFilter.value.toLowerCase();
+    const duration = Number(durationFilter.value);
+    const filtered = recipes.filter(r => {
+        const matchesFlavour = flavour === "" || r.flavour.toLowerCase().includes(flavour);
+        const matchesFoodType = food_type === "" || r.food_type.toLowerCase().includes(food_type);
+        const matchesCourse = course === "" || r.course.toLowerCase().includes(course);
+        const matchesDuration = duration === 144000 || r.total_time <= duration;
+        return matchesFlavour && matchesFoodType && matchesCourse && matchesDuration;
+    });
 
-        renderRecipes(filtered);
-    }
+    renderRecipes(filtered);
+  }
 
-    //searchInput.addEventListener("input", filterRecipes);
-    flavourFilter.addEventListener("change", filterRecipes);
-    foodTypeFilter.addEventListener("change", filterRecipes);
-    courseFilter.addEventListener("change", filterRecipes);
+  flavourFilter.addEventListener("change", filterRecipes);
+  foodTypeFilter.addEventListener("change", filterRecipes);
+  courseFilter.addEventListener("change", filterRecipes);
+  durationFilter.addEventListener("change", filterRecipes);
 
-    clearFilters.addEventListener("click", function(e) {
+  clearFilters.addEventListener("click", function(e) {
   e.preventDefault(); // Prevent default anchor behavior
   flavourFilter.value = "";
   foodTypeFilter.value = "";
   courseFilter.value = "";
+  durationFilter.value = 144000;
   renderRecipes(recipes); // Show all recipes
 });
 

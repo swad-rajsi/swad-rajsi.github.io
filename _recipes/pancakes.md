@@ -4,7 +4,7 @@ title: "Fluffy Pancakes"
 published: true
 prep_time: 5 minutes
 cook_time: 10 minutes
-total_time: 15 minutes
+total_time: 15  # in minutes for filter
 course: Breakfast
 flavour: Sweet
 food_type: Continental
