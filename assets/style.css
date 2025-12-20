@@ -150,13 +150,14 @@ input::placeholder {
 }
 
 .swad-rajsi-td-border {
-  padding:5px;
-  padding-left:15px;
-  width:16.66%;
+  padding: 5px;
+  padding-left: 15px;
+  width: 16.66%;
   border-right: dotted;
-  border-color:gray;
+  border-color: gray;
   border-width: 2px;
 }
+
 /* 
 .value-box {
   text-align: center;
@@ -172,7 +173,7 @@ input::placeholder {
 .serving-button-group {
   display: flex;
   justify-content: center;
-  gap:0px
+  gap: 0px
 }
 
 .serving-btn {
@@ -187,4 +188,65 @@ input::placeholder {
 .serving-btn.active {
   background: #a10b0b;
   color: #fff;
+}
+
+.recipe-gallery {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding: 12px;
+  scroll-snap-type: x mandatory;
+}
+
+.recipe-gallery .gallery-item {
+  flex-shrink: 0;
+  scroll-snap-align: start;
+}
+
+.recipe-gallery img {
+  height: 140px;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.2s ease;
+}
+
+.recipe-gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Optional: Hide scrollbar for modern browsers */
+.recipe-gallery {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.recipe-gallery::-webkit-scrollbar {
+  display: none;
+}
+
+.recipe-search input,
+.recipe-search select {
+  margin-right: 10px;
+  padding: 5px;
+  font-size: 12px;
+  font-family: sans-serif;
+}
+
+.recipe-search-select {
+  background-color: bisque;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  padding:10px 7px 10px 7px !important;
+}
+
+.clear-filters {
+  margin-left: 10px;
+  cursor: pointer;
+  color: #007acc;
+  text-decoration: underline;
+  font-size: 11px;
+}
+
+.clear-filters:hover {
+  color: #005fa3;
 }

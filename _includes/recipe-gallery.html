@@ -1,0 +1,21 @@
+<!-- <div class="recipe-gallery">
+    {% for file in site.static_files %}
+    {% if file.path contains '/assets/images/recipes/' and (file.extname == '.jpg' or file.extname == '.png' or
+    file.extname == '.jpeg' or file.extname == '.webp') %}
+    <div class="gallery-item">
+        <a href="{{ recipe.url | relative_url }}" class="gallery-link">
+            <img src="{{ file.path | relative_url }}" alt="{{ file.name }}">
+        </a>
+    </div>
+    {% endif %}
+    {% endfor %}
+</div> -->
+<div class="recipe-gallery">
+  {% for recipe in site.recipes %}
+    {% if recipe.image %}
+      <a href="{{ recipe.url | relative_url }}">
+        <img src="{{ recipe.image | relative_url }}" alt="{{ recipe.title }}">
+      </a>
+    {% endif %}
+  {% endfor %}
+</div>

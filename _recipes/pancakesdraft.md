@@ -1,16 +1,16 @@
 ---
 layout: recipe
-title: "Fluffy Pancakes 3"
+title: "Fluffy Pancakes Draft"
 published: false
 prep_time: 5 minutes
 cook_time: 10 minutes
-course: Breakfast
-flavour: Sweet
-food_type: Continental
+course: Lunch
+flavour: Salty
+food_type: Indian
 serving_original: 4
 serving: 4
-permalink: /recipes/fluffy-pancakes-/
-image: /assets/images/recipes/pancakes.jpg
+permalink: /recipes/fluffy-pancakes-draft/
+image: /assets/images/recipes/pancakes copy.jpg
 ingredients:
   - heading: Main Ingredients
     items:
