@@ -17,24 +17,36 @@ All Recipes
     <select id="flavourFilter" class="recipe-search-select">
         <option value="">All Flavours</option>
         {% for f in flavours %}
-        <option value="{{ f | downcase }}">{{ f }}</option>
-        {% endfor %}
+          {% assign flavour_items = f | split: ',' %}
+          {% for item in flavour_items %}
+            {% assign flavour = item | strip %}
+            <option value="{{ flavour | downcase }}">{{ flavour }}</option>
+            {% endfor %}
+          {% endfor %}
     </select>
 
     {% assign food_types = site.recipes | map: "food_type" | uniq | sort %}
     <select id="foodTypeFilter" class="recipe-search-select">
         <option value="">All Types</option>
-        {% for t in food_types %}
-        <option value="{{ t | downcase }}">{{ t }}</option>
-        {% endfor %}
+        {% for f in food_types %}
+          {% assign food_types_items = f | split: ',' %}
+          {% for item in food_types_items %}
+            {% assign food_type = item | strip %}
+            <option value="{{ food_type | downcase }}">{{ food_type }}</option>
+            {% endfor %}
+          {% endfor %}
     </select>
 
-    {% assign course = site.recipes | map: "course" | uniq | sort %}
+    {% assign courses = site.recipes | map: "course" | uniq | sort %}
     <select id="courseFilter" class="recipe-search-select">
         <option value="">All Courses</option>
-        {% for c in course %}
-        <option value="{{ c | downcase }}">{{ c }}</option>
-        {% endfor %}
+        {% for f in courses %}
+          {% assign courses_items = f | split: ',' %}
+          {% for item in courses_items %}
+            {% assign course = item | strip %}
+            <option value="{{ course | downcase }}">{{ course }}</option>
+            {% endfor %}
+          {% endfor %}
     </select>
 
     <select id="durationFilter" class="recipe-search-select">
