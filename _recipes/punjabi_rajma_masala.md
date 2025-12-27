@@ -109,7 +109,16 @@ steps:
       - Once cooked, Rajma should be soft enough that they will get mashed easily between fingers but still hold their shape. Keep aside.
   - title: Curry Prep
     actions: 
-      - In a pot, add 1 tbsp clarified butter/ ghee 
+      - In a pot on medium flame, add 1 tbsp clarified butter/ ghee, add ingredients from b) to g), let it sizzle for few seconds.
+      - Add Ginger Garlic paste and saute for a minute.
+      - Add  chopped onion and saute till golden brown.
+      - Now, add ingredients from j) to m) and saute for few seconds till spices turns aromatic.
+      - Further, add tomato and cook till tomato turns mushy/ oil seprates.
+      - Add boiled rajma beans, green chilli, salt, and 1-2 cup water to adjust consistency. If using canned rajma, discard liquid and wash rajma before use.
+      - Cover and cook for 15 minutes on medium flame for rajma to absorbs flavour.
+      - Add Garam Masala, dried fenugreek leaves and mix and shut off flame.
+      - It will get thick when cooled down. Adjust consistency with water and add salt/ chilli if required.
+      - Garnish with julienne ginger slices, coriander leaves and heavy cream before serving.
 ---
 
 Rajma, also known as rajmah, razma, or lal lobia, is a vegetarian dish, originating from the Indian subcontinent, consisting of red kidney beans in a thick gravy with many Indian whole spices, and is usually served with rice.
