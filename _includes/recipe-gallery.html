@@ -18,4 +18,14 @@
       </a>
     {% endif %}
   {% endfor %}
+
+  <!-- Extra images (no links) -->
+  {% assign extra_images = site.static_files | where_exp: "file", "file.path contains '/assets/images/extra/'" %}
+
+  {% for img in extra_images %}
+    <div class="gallery-item extra-item">
+      <img src="{{ img.path | relative_url }}" alt="Food image">
+    </div>
+  {% endfor %}
+
 </div>
