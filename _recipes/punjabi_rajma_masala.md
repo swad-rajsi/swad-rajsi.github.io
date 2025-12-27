@@ -4,54 +4,112 @@ title: "Punjabi Rajma Masala"
 published: true
 prep_time: 8 hours
 cook_time: 35 minutes
-total_time: 45  # in minutes for filter
-course: Main,Lunch,Dinner
-flavour: Warm,Savory,Spicy
+total_time: 515  # in minutes for filter
+course: Main, Lunch, Dinner
+flavour: Warm, Savory, Spicy
 food_type: Punjabi
 serving_original: 4
 serving: 4
-permalink: /recipes/fluffy-pancakes/
-image: /assets/images/recipes/pancakes.jpg
+permalink: /recipes/punjabi-rajma-masala/
+image: /assets/images/recipes/punjabi_rajma_masala.jpg
 ingredients:
-  - heading: Main Ingredients
+  - heading: Dip & pressure cooking
     items:
-      - qty: 3/4
+      - qty: 1
         unit: cup
-        name: all-purpose flour
-      - qty: 1/2
+        name: rajma (Kidney Beans) - Soaked overnight for 8 hours
+      - qty: 1
+        unit: teaspoon
+        name: salt
+      - qty: 3
+        unit: cup
+        name: water
+
+  - heading: Curry preparation
+    items:
+      - qty: 1
         unit: tablespoon
-        name: white sugar, powdered
+        name: Clarified butter/ Ghee or Vegetable oil
       - qty: 1
         unit: teaspoon
-        name: baking powder
-      - qty: 1/8
-        unit: teaspoon
-        name: salt, or as per taste
-      - qty: 3/4
-        unit: cup
-        name: milk
+        name: Cumin/ Jeera
       - qty: 1
-        unit: tablespoons
-        name: butter, melted
+        unit: pinch
+        name: Asafoetida/ Heeng 
+        scale: false
       - qty: 1
         unit: 
-        name: egg
-
-  - heading: Toppings & Garnish
+        name: Black Cardamom/ Kali Ilaychi
+      - qty: 1
+        unit: inch
+        name: Cinnamon stick/ Dalchini
+      - qty: 4
+        unit: 
+        name: Cloves/ Laung
+      - qty: 1
+        unit: 
+        name: Bay Leaf/ Tej Patta
+      - qty: 1
+        unit: tablespoon
+        name: Ginger Garlic Paste/ Adrak Lahsun Paste
+      - qty: 2
+        unit: 
+        name: Onion (chopped = 120 gm)
+      - qty: 1/4
+        unit: teaspoon
+        name: Turmeric/ Haldi
+      - qty: 1
+        unit: teaspoon
+        name: Kashmiri chili powder
+      - qty: 1
+        unit: teaspoon
+        name: Coriander powder/ Dhaniya powder
+      - qty: 1/2
+        unit: teaspoon
+        name: Cumin powder/ Jeera powder
+      - qty: 4
+        unit: 
+        name: Tomatoes (chopped or paste = 350 gm)
+      - qty: 1
+        unit: 
+        name: Green chilli (slit)
+      - qty: 1
+        unit: teaspoon
+        name: salt (or to taste)
+      - qty: 1/2
+        unit: teaspoon
+        name: Garam Masala
+        link: https://en.wikipedia.org/wiki/Garam_masala
+      - qty: 1.5
+        unit: tablespoon
+        name: Dried Fenugreek leaves/ Kasuri Methi (crushed)
+  
+  - heading: Garnish
     items:
       - qty: 
         unit: 
-        name: Maple Syrup/ Honey as per your taste
+        name: Few Ginger slices (julienne)
         scale: false
+      - qty: 1
+        unit: tablespoon
+        name: Coriander leaves/ Dhaniya ke patte
+      - qty: 2
+        unit: tablespoon
+        name: Heavy Cream 
+
       
 steps:
-  - In a bowl, sift the dry ingredients together.
-  - In another bowl, whisk milk, butter and egg to make smooth blend. You can also use fork or spoon here.
-  - Add the wet ingredients to dry ones. Stir to combine.
-  - Heat a griddle/pan at medium heat. Usually non-stick ones work better for me.
-  - Scoop some (1/4 cup) batter onto the pan.
-  - Cook for two or three minutes, then flip.
-  - Continue cooking until light brown on both sides.
+  - title: Boil Rajma/ Or Use Canned Rajma
+    actions: 
+      - Wash and rinse Rajma (Kidney Beans) thrice.
+      - Soak them in 5 cups water for 7 hours to overnight.
+      - Once ready, discard water and rinse them well.
+      - Transfer them to instant pressure cooker/ instant pot.
+      - Add 3 cups water and cook for 5-6 whistles and let steam die. Or 12-15 minutes in instant pot.
+      - Once cooked, Rajma should be soft enough that they will get mashed easily between fingers but still hold their shape. Keep aside.
+  - title: Curry Prep
+    actions: 
+      - In a pot, add 1 tbsp clarified butter/ ghee 
 ---
 
-These pancakes are light, fluffy, and perfect for weekend breakfasts. You can add chocolate chips or your favourite berries to add that fun part. You can top them with syrup, fruit, butter or a dallop of whipping cream.
+Rajma, also known as rajmah, razma, or lal lobia, is a vegetarian dish, originating from the Indian subcontinent, consisting of red kidney beans in a thick gravy with many Indian whole spices, and is usually served with rice.

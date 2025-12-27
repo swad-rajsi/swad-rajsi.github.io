@@ -42,10 +42,12 @@ ingredients:
         name: Sugar
         scale: false
 steps:
-  - In a bowl, mix flour, sugar, and baking powder.
-  - In another bowl, whisk milk and egg.
-  - Combine wet and dry ingredients.
-  - Heat a skillet and pour 1/4 cup batter, cook until golden.
+  - title: Prep Steps
+    actions: 
+      - In a bowl, mix flour, sugar, and baking powder.
+      - In another bowl, whisk milk and egg.
+      - Combine wet and dry ingredients.
+      - Heat a skillet and pour 1/4 cup batter, cook until golden.
 ---
 
 These pancakes are light, fluffy, and perfect for weekend breakfasts. You can top them with syrup, fruit, or butter.

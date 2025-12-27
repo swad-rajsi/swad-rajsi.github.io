@@ -81,13 +81,19 @@
           <li style="font-size: 15px;padding-bottom:10px;">
             <strong>{{ section.heading }}</strong>
 
-            <ul style="margin-top: 5px;">
+            <ol class="alpha-paren" style="margin-top: 5px;">
               {% for item in section.items %}
               <li class="swad-rajsi-ingredients ingredient-item" data-qty="{{ item.qty }}" data-unit="{{ item.unit }}"
                 data-scale="{{ item.scale }}" data-name="{{ item.name }}"><span class="qty">{{ item.qty
-                  }}</span> {{ item.unit }} {{ item.name }}</li>
+                  }}</span> {{ item.unit }} 
+                  {% if item.link %}
+                    <a href="{{ item.link }}" target="_blank" rel="noopener">{{ item.name }}</a>
+                  {% else %}
+                    {{ item.name }}
+                  {% endif %}   
+                </li>
               {% endfor %}
-            </ul>
+            </ol>
           </li>
           {% endfor %}
         </ul>
@@ -95,13 +101,16 @@
     </div>
 
     <div id="Steps"
-      style="padding:10px;color: #d25fd2ff;font-size:20px;font-family:Georgia;justify-content:left !important;">
+      style="padding:10px;color: #d25fd2ff;font-size:20px;font-family:Georgia;justify-content:left !important;padding-bottom:5px;">
       Steps</div>
-    <ol style="margin-top: 0px;">
       {% for step in page.steps %}
-      <li class="swad-rajsi-ingredients">{{ step }}</li>
+      <h4 style="font-size: 14px;margin-top: 5px;margin-bottom:3px;padding-top:5px;padding-left:15px;">{{ step.title }}</h4>
+      <ol class="swad-rajsi-ingredients">
+          {% for action in step.actions %}
+            <li>{{ action }}</li>
+          {% endfor %}
+      </ol>
       {% endfor %}
-    </ol>
 
     <div class="swad-rajsi-ingredients">{{ content }}</div>
 

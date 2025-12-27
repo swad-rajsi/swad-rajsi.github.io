@@ -360,3 +360,23 @@ input::placeholder {
   margin-top:20px;
 }
 /*End Contact us page*/
+
+/* Start recipe ordered ol count*/
+ol.alpha-paren {
+  list-style: none;
+  counter-reset: alpha;
+  padding-left: 1.5rem;
+}
+
+ol.alpha-paren li {
+  counter-increment: alpha;
+  position: relative;
+  margin-bottom: 1px;
+}
+
+ol.alpha-paren li::before {
+  content: counter(alpha, lower-alpha) ")";
+  position: absolute;
+  left: -1.5rem;
+}
+/* End recipe ordered ol count */

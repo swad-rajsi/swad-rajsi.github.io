@@ -45,13 +45,15 @@ ingredients:
         scale: false
       
 steps:
-  - In a bowl, sift the dry ingredients together.
-  - In another bowl, whisk milk, butter and egg to make smooth blend. You can also use fork or spoon here.
-  - Add the wet ingredients to dry ones. Stir to combine.
-  - Heat a griddle/pan at medium heat. Usually non-stick ones work better for me.
-  - Scoop some (1/4 cup) batter onto the pan.
-  - Cook for two or three minutes, then flip.
-  - Continue cooking until light brown on both sides.
+  - title:
+    actions: 
+      - In a bowl, sift the dry ingredients together.
+      - In another bowl, whisk milk, butter and egg to make smooth blend. You can also use fork or spoon here.
+      - Add the wet ingredients to dry ones. Stir to combine.
+      - Heat a griddle/pan at medium heat. Usually non-stick ones work better for me.
+      - Scoop some (1/4 cup) batter onto the pan.
+      - Cook for two or three minutes, then flip.
+      - Continue cooking until light brown on both sides.
 ---
 
 These pancakes are light, fluffy, and perfect for weekend breakfasts. You can add chocolate chips or your favourite berries to add that fun part. You can top them with syrup, fruit, butter or a dallop of whipping cream.
