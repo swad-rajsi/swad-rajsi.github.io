@@ -7,6 +7,24 @@
   gtag('js', new Date());
   gtag('config', 'G-95Q2G5RF8X');
 </script>
+<script>
+document.addEventListener('click', function(e) {
+  const link = e.target.closest('a');
+  if (!link) return;
+
+  const href = link.getAttribute('href');
+  if (!href) return;
+
+  // Track internal recipe clicks
+  if (href.startsWith('/recipes/')) {
+    gtag('event', 'recipe_click', {
+      event_category: 'engagement',
+      event_label: href
+    });
+  }
+});
+</script>
+
 <head>
   <meta charset="utf-8">
   <title>{{ page.title }} | Recipes</title>
