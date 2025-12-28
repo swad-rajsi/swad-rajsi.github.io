@@ -3,15 +3,15 @@ layout: default
 title: "All Recipes"
 permalink: /recipes/
 ---
-<div class="swad-rajsi-centre-display" style="margin-top:-30px;margin-bottom:10px;color: #d25fd2ff;font-size:20px;font-family:Georgia;justify-content:left !important;" >
+<!-- <div class="swad-rajsi-centre-display" style="margin-top:-30px;margin-bottom:10px;color: #d25fd2ff;font-size:20px;font-family:Georgia;justify-content:left !important;" >
 All Recipes
-</div>
+</div> -->
 
 <!-- <h3>DEBUG: Total recipes = {{ site.recipes | size }}</h3> -->
 {% include recipe-gallery.html %}
 
 <div class="recipe-search" style="padding-top:10px;">
-  <div style="margin-left:30px;padding-bottom:10px;">
+  <div style="margin-left:1em;padding-bottom:0.5em;">
     {% assign flavours = site.recipes | map: "flavour" | uniq | sort %}
     <select id="flavourFilter" class="recipe-search-select">
         <option value="">All Flavours</option>
