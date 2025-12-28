@@ -20,14 +20,14 @@ title: "Home"
 <div class="swad-rajsi-centre-display" style="margin-top:30px;margin-bottom:10px;color: #d25fd2ff;font-size:32px;font-family:Georgia;" >
 Welcome
 </div>
-<div class="swad-rajsi-centre-display" style="marging-left:30px;margin-right:30px;padding-left:100px;padding-right:100px;marging-bottom:30px;padding-bottom:20px;font-size:16px;font-family:sans-serif;color:darkslategray;">
-There's much to see here. So, take your time, look around, and learn all there is to know about me. I love connecting with my readers. Let's share recipes and chat about our love for both traditional recipes and some new modern twists. I hope you enjoy my site and take a moment to say hello!
+<div class="swad-rajsi-centre-display" style="marging-bottom:30px;padding-bottom:20px;font-size:1em;font-family:sans-serif;color:darkslategray;">
+There's much to see here. So, take your time, look around, and learn all there is to know about us. We love connecting with our readers. Let's share recipes and chat about our love for both traditional recipes and some new modern twists. We hope you enjoy this site and take a moment to say hello!
 </div>
 ---
-<div class="swad-rajsi-centre-display" style="margin-top:30px;margin-bottom:10px;color: #d25fd2ff;font-size:32px;font-family:Georgia;">Join My Mailing List
+<div class="swad-rajsi-centre-display" style="margin-top:30px;margin-bottom:10px;color: #d25fd2ff;font-size:32px;font-family:Georgia;">Join The Mailing List
 </div>
-<div class="swad-rajsi-centre-display" style="marging-left:30px;margin-right:30px;padding-left:100px;padding-right:100px;font-size:16px;font-family:sans-serif;color:darkslategray;">
-Be the first to hear about my latest recipes and food adventures!
+<div class="swad-rajsi-centre-display" style="font-size:1em;font-family:sans-serif;color:darkslategray;">
+Be the first to hear about our latest recipes and food adventures!
 </div>
 <div>
 <form id="joiningMailingListForm" class="swad-rajsi-centre-display" style="margin-top:30px;marging-left:20px;padding-left:40px;text-transform:none;" action="https://formspree.io/f/xqarjooq" method="POST">
