@@ -392,3 +392,7 @@ ol.alpha-paren li::before {
   left: -1.5rem;
 }
 /* End recipe ordered ol count */
+
+.recipe-page-bottom-anchor:hover {
+  border-bottom: 1px solid #eba0eb;
+}

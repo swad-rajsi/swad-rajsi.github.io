@@ -37,7 +37,7 @@ document.addEventListener('click', function(e) {
 
   <main class="recipe">
 
-    <div class="swad-rajsi-centre-display"
+    <div id="top" class="swad-rajsi-centre-display"
       style="margin-top:-0.5em;margin-bottom:1em;color: #d25fd2ff;font-size:2em;font-family:Georgia;justify-content:left !important;">
       {{page.title}}</div>
     <div style="display: flex;justify-content: center;align-items: center;">
@@ -142,6 +142,19 @@ document.addEventListener('click', function(e) {
       {% endfor %}
 
     <div class="swad-rajsi-ingredients">{{ content }}</div>
+
+    <div style="display:flex;justify-content:right;gap:20px;padding-top: 2em;">
+      <nav class="nav">
+        <a class="swad-rajsi-nav recipe-page-bottom-anchor"
+          href="#top">TOP</a>
+        <a class="swad-rajsi-nav recipe-page-bottom-anchor"
+          href="{{ '/contact/' | relative_url }}">CONTACT</a>
+        <a class="swad-rajsi-nav recipe-page-bottom-anchor"
+          href="{{ '/recipes/' | relative_url }}">RECIPES</a>
+        <a class="swad-rajsi-nav recipe-page-bottom-anchor"
+          href="{{ page.next.url | relative_url }}" title="{{ page.next.title }}">NEXT</a>
+      </nav>
+    </div>
 
   </main>
 
