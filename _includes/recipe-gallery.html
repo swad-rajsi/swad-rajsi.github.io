@@ -13,9 +13,11 @@
 <div class="recipe-gallery">
   {% for recipe in site.recipes %}
     {% if recipe.image %}
+    <div class="gallery-item">
       <a href="{{ recipe.url | relative_url }}">
         <img src="{{ recipe.image | relative_url }}" alt="{{ recipe.title }}">
       </a>
+    </div>
     {% endif %}
   {% endfor %}
 
@@ -23,7 +25,7 @@
   {% assign extra_images = site.static_files | where_exp: "file", "file.path contains '/assets/images/extra/'" %}
 
   {% for img in extra_images %}
-    <div class="gallery-item extra-item">
+    <div class="gallery-item">
       <img src="{{ img.path | relative_url }}" alt="Food image">
     </div>
   {% endfor %}
