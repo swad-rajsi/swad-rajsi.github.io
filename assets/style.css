@@ -36,7 +36,7 @@ main {
   background: #eee;
   text-align: center;
   padding: 10px;
-  margin-top: 40px;
+  margin-top: 2em;
 }
 
 .swad-rajsi-nav {
@@ -286,7 +286,7 @@ input::placeholder {
 
 /*Start Contact us page*/
 .contact-form {
-  max-width: 90%;
+  max-width: 100%;
   display: block !important;
   margin: 20px 0;
   font-family: sans-serif;
@@ -297,9 +297,10 @@ input::placeholder {
 }
 
 .contact-me-form-group {
-  margin-bottom: 20px;
+  margin-bottom: 1em;
   padding-top: 10px;
-  padding-left: 40px;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 .contact-me-form-group label {
@@ -309,16 +310,14 @@ input::placeholder {
 
 /* The Underline Effect */
 .contact-me-underline-input {
-  width: 95%;
+  width: 96%;
   border: none;
   border-bottom: 1px solid #333;
   /* The "_______" line */
   outline: none;
   background: transparent;
   margin-right: 20px;
-  padding: 8px;
-  padding-top: 5px;
-  padding-left:0px;
+  padding: 0.5em;
   vertical-align: middle;
   color: darkslategray;
   transition: border-color 0.3s;
