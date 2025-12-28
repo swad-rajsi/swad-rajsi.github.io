@@ -51,7 +51,7 @@ document.addEventListener('click', function(e) {
     border-color: #417505;
     padding: 10px;
     background-color: rgb(238, 233, 233);
-    max-width: 950px;border-radius: 4px;">
+    max-width: 100%;border-radius: 4px;">
       <div style="padding: 10px;font-size: 20px;font-family:Georgia;color: #d25fd2ff;">Table of Contents</div>
       <div style="padding: 5px;"><a href="#Ingredients" style="text-decoration: none;"><span
             style="padding-right:10px;">1).</span><span>Ingredients</span></a></div>
@@ -65,23 +65,27 @@ document.addEventListener('click', function(e) {
     border-color: #417505;
     padding: 10px;
     background-color: bisque;
-    max-width: 950px;margin-top: 20px;border-radius: 4px;">
+    max-width: 100%;margin-top: 20px;border-radius: 4px;">
       <div style="padding: 10px;font-size: 20px;font-family:Georgia;color: #d25fd2ff;">Ingredients</div>
-      <div>
+      <div style="padding:10px;max-width:100%;margin-bottom:20px;">
         <table style="border-style: dotted; 
-    border-width: 2px;border-color:gray;padding:10px;width:100%; font-size: 13px; margin-bottom:20px;">
+    border-width: 2px;border-color:gray;font-size: 1em;max-width:100%;">
           <tr style="font-weight:bold;">
             <td class="swad-rajsi-td-border">Preparation Time</td>
             <td class="swad-rajsi-td-border">Cook Time</td>
-            <td class="swad-rajsi-td-border">Course</td>
+            <td class="swad-rajsi-td-border" style="border-right: none !important;">Course</td>
+          </tr>
+          <tr>
+            <td class="swad-rajsi-td-border" style="border-bottom: 2px dotted gray;">{{page.prep_time}}</td>
+            <td class="swad-rajsi-td-border" style="border-bottom: 2px dotted gray;">{{page.cook_time}}</td>
+            <td class="swad-rajsi-td-border" style="border-bottom: 2px dotted gray; border-right: none !important;">{{page.course}}</td>
+          </tr>
+          <tr style="font-weight:bold;">
             <td class="swad-rajsi-td-border">Flavour</td>
             <td class="swad-rajsi-td-border">Type</td>
             <td class="swad-rajsi-td-border" style="border-right: none !important;">Serving</td>
           </tr>
           <tr>
-            <td class="swad-rajsi-td-border">{{page.prep_time}}</td>
-            <td class="swad-rajsi-td-border">{{page.cook_time}}</td>
-            <td class="swad-rajsi-td-border">{{page.course}}</td>
             <td class="swad-rajsi-td-border">{{page.flavour}}</td>
             <td class="swad-rajsi-td-border">{{page.food_type}}</td>
             <td class="swad-rajsi-td-border" style="border-right: none !important;">
