@@ -2,20 +2,42 @@
 layout: default
 title: "Home"
 ---
+<div class="desktop-only">
 <table style="background-color: #f7b7f0ff; height:100%;width:100%;">
 <tr>
 <td style="width:60%; vertical-align:top;background-color: #f7b7f0ff;"><img src="/assets/images/Cover.png" alt="Cover" width="100%"></td>
 <td style="width:50%; vertical-align:top;background-color: #f7b7f0ff;">
   <div class="swad-rajsi-centre-display" style="padding-left:40px;padding-right:40px;padding-top:50px;">
-  <p style="font-size:32px; font-style:oblique;font-family:cursive;">Explore delicious vegetarian recipes, modern twists, and quick meals</p>
+  <p style="font-size:32px; font-style:oblique;font-family:cursive;">Explore delicious recipes, luxurious, modern twists, or quick meals.</p>
   </div>
   <div class="swad-rajsi-centre-display" style="padding-left:40px;padding-right:40px;padding-bottm:50px;margin-top:-30px;">
-  <p style="font-size:20px;">Join me in my love of food & cooking!</p>
+  <p style="font-size:20px;">Join us in our love of food & cooking !</p>
   </div>
-  <div class="swad-rajsi-centre-display" style="padding-left:40px;padding-right:40px;padding-bottm:50px;"><a class="swad-rajsi-read-now" href="{{ '/recipes/' | relative_url }}">READ NOW</a></div>
+  <div class="swad-rajsi-centre-display" style="padding-left:40px;padding-right:40px;"><a class="swad-rajsi-read-now" href="{{ '/recipes/' | relative_url }}">READ NOW</a></div>
 </td>
 </tr>
 </table>
+</div>
+
+<div class="mobile-only">
+<table style="background-color: #f7b7f0ff; height:100%;width:100%;">
+<tr>
+<td style="width:100%; vertical-align:top;background-color: #f7b7f0ff;"><img src="/assets/images/Cover.png" alt="Cover" width="100%"></td>
+</tr>
+<tr>
+<td style="width:100%; vertical-align:top;background-color: #f7b7f0ff;">
+  <div class="swad-rajsi-centre-display" style="padding-left:1em;padding-right:1em;">
+  <p style="font-size:1em; font-style:oblique;font-family:cursive;">Explore delicious recipes, luxurious, modern twists, or quick meals.</p>
+  </div>
+  <div class="swad-rajsi-centre-display" style="padding-left:40px;padding-right:40px;padding-bottm:50px;margin-top:-1em;">
+  <p style="font-size:0.8em;">Join us in our love of food & cooking !</p>
+  </div>
+  <div class="swad-rajsi-centre-display" style="padding-left:3em;padding-right:3em;padding-bottom:1em;"><a class="swad-rajsi-read-now" href="{{ '/recipes/' | relative_url }}">READ NOW</a></div>
+</td>
+</tr>
+</table>
+</div>
+
 
 <div class="swad-rajsi-centre-display" style="margin-top:30px;margin-bottom:10px;color: #d25fd2ff;font-size:32px;font-family:Georgia;" >
 Welcome
