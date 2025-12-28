@@ -310,7 +310,7 @@ input::placeholder {
 
 /* The Underline Effect */
 .contact-me-underline-input {
-  width: 96%;
+  width: 95%;
   border: none;
   border-bottom: 1px solid #333;
   /* The "_______" line */

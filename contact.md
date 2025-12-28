@@ -3,11 +3,11 @@ layout: default
 title: "Contact"
 permalink: /contact/
 ---
-
-<div style="color: #d25fd2ff;font-size:2em;font-family:Georgia;">Contact Us
-</div>
-<div class="swad-rajsi-centre-display" style="marging-left:2em;margin-right:2em;font-size:1em;font-family:sans-serif;color:darkslategray;">
-You can send us a message or share a quick recipe with us. We will do our best to get back to you soon!
+<!-- 
+<div style="color: #d25fd2ff;font-size:1.5em;font-family:Georgia;">Contact Us
+</div> -->
+<div class="swad-rajsi-centre-display" style="marging-left:2em;margin-right:2em;font-size:1em;font-family:sans-serif;color:darkslategray;padding:0.5em;">
+You can send us a message or share a quick recipe with us !
 </div>
 
 <form id="contactMeForm" class="swad-rajsi-centre-display contact-form" action="https://formspree.io/f/mwveowlq" method="POST">
