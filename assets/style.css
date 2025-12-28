@@ -253,6 +253,24 @@ input::placeholder {
 /* End pagination in recipes*/
 
 /* Start recipe search filter*/
+.all-recipes-filter-row {
+  display: flex;
+  gap: 1em; /* horizontal space between filters */
+  flex-wrap: nowrap; /* do not wrap on desktop */
+}
+
+@media (max-width: 768px) {
+  .all-recipes-filter-row {
+    flex-wrap: wrap; /* allow wrapping on mobile */
+    gap: 0.5em 1em; /* vertical gap 0.5em, horizontal 1em */
+  }
+  .filter-row select {
+    flex: 1 1 100%; /* each select takes full width */
+    margin-bottom: 0.5em; /* space between rows */
+  }
+}
+
+
 .recipe-search input,
 .recipe-search select {
   margin-right: 10px;

@@ -11,7 +11,7 @@ All Recipes
 {% include recipe-gallery.html %}
 
 <div class="recipe-search" style="padding-top:10px;">
-  <div style="margin-left:1em;padding-bottom:0.5em;">
+  <div class="all-recipes-filter-row" style="margin-left:1em;padding-bottom:0.5em;">
     {% assign flavours = site.recipes | map: "flavour" | uniq | sort %}
     <select id="flavourFilter" class="recipe-search-select">
         <option value="">All Flavours</option>
