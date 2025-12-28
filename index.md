@@ -31,8 +31,8 @@ Be the first to hear about our latest recipes and food adventures!
 </div>
 <div>
 <form id="joiningMailingListForm" class="swad-rajsi-centre-display" style="margin-top:30px;marging-left:20px;padding-left:40px;text-transform:none;" action="https://formspree.io/f/xqarjooq" method="POST">
-<input name="email" aria-multiline="false" role="textbox" type="email" style="border-style:solid;border-left-width:0px;border-right-width:0px;border-top-width:0px;border-bottom-width:1px;margin-right:10px;padding:8px;padding-top:23px;border-color:darkgray;width:45%;vertical-align:middle;color:darkslategray;transition: border-color 0.3s;font-size:18px;font-family: arial;" required placeholder="Email Address" value>
-<span style="padding-left:40px;padding-right:40px;padding-bottm:50px;"><button type="submit" class="swad-rajsi-read-now" style="background-color:#d25fd2ff !important;border-width:0px;" >SIGN UP</button></span>
+<input name="email" aria-multiline="false" role="textbox" type="email" style="border-style:solid;border-left-width:0px;border-right-width:0px;border-top-width:0px;border-bottom-width:1px;margin-left:0.5em;padding:0.5em;padding-top:1em;border-color:darkgray;vertical-align:middle;color:darkslategray;transition: border-color 0.3s;font-size:1em;font-family: arial;max-width:100%" required placeholder="Email Address" value>
+<span style="padding-left:2em;padding-right:2em;padding-bottm:50px;"><button type="submit" class="swad-rajsi-read-now" style="background-color:#d25fd2ff !important;border-width:0px;" >SIGN UP</button></span>
 </form>
 </div>
 <div class="swad-rajsi-centre-display" style="margin-top:5px;text-transform:none;">
