@@ -14,7 +14,7 @@ All Recipes
   <div class="all-recipes-filter-row" style="margin-left:1em;padding-bottom:0.5em;">
     {% assign flavours = site.recipes | map: "flavour" | uniq | sort %}
     <select id="flavourFilter" class="recipe-search-select">
-        <option value="">All Flavours</option>
+        <option value="">ALL FLAVOURS</option>
         {% for f in flavours %}
           {% assign flavour_items = f | split: ',' %}
           {% for item in flavour_items %}
@@ -26,7 +26,7 @@ All Recipes
 
     {% assign food_types = site.recipes | map: "food_type" | uniq | sort %}
     <select id="foodTypeFilter" class="recipe-search-select">
-        <option value="">All Types</option>
+        <option value="">ALL TYPES</option>
         {% for f in food_types %}
           {% assign food_types_items = f | split: ',' %}
           {% for item in food_types_items %}
@@ -38,7 +38,7 @@ All Recipes
 
     {% assign courses = site.recipes | map: "course" | uniq | sort %}
     <select id="courseFilter" class="recipe-search-select">
-        <option value="">All Courses</option>
+        <option value="">ALL COURSES</option>
         {% for f in courses %}
           {% assign courses_items = f | split: ',' %}
           {% for item in courses_items %}
@@ -49,7 +49,7 @@ All Recipes
     </select>
 
     <select id="durationFilter" class="recipe-search-select">
-      <option value="144000">Cook under:(Time)</option>
+      <option value="144000">TOTAL TIME IN</option>
       <option value="15">15 minutes</option>
       <option value="30">30 minutes</option>
       <option value="45">45 minutes</option>
