@@ -2,7 +2,7 @@
 layout: default
 title: "Home"
 ---
-<table style="b3ackground-color: #f7b7f0ff; height:100%;width:100%;">
+<table style="background-color: #f7b7f0ff; height:100%;width:100%;">
 <tr>
 <td style="width:60%; vertical-align:top;background-color: #f7b7f0ff;"><img src="/assets/images/Cover.png" alt="Cover" width="100%"></td>
 <td style="width:50%; vertical-align:top;background-color: #f7b7f0ff;">
