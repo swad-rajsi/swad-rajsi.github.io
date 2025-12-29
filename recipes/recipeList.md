@@ -96,6 +96,7 @@ All Recipes
   const searchInput = document.getElementById("searchInput");
   const flavourFilter = document.getElementById("flavourFilter");
   const foodTypeFilter = document.getElementById("foodTypeFilter");
+  const dietaryPatternFilter = document.getElementById("dietaryPatternFilter");
   const courseFilter = document.getElementById("courseFilter");
   const durationFilter = document.getElementById("durationFilter");
   const recipeList = document.getElementById("recipeList");
@@ -125,10 +126,10 @@ All Recipes
     const filtered = recipes.filter(r => {
         const matchesFlavour = flavour === "" || r.flavour.toLowerCase().includes(flavour);
         const matchesFoodType = food_type === "" || r.food_type.toLowerCase().includes(food_type);
-         const matchesFoodType = dietary_pattern === "" || r.dietary_pattern.toLowerCase().includes(dietary_pattern);
+        const matchesDietaryPattern = dietary_pattern === "" || r.dietary_pattern.toLowerCase().includes(dietary_pattern);
         const matchesCourse = course === "" || r.course.toLowerCase().includes(course);
         const matchesDuration = duration === 144000 || r.total_time <= duration;
-        return matchesFlavour && matchesFoodType && matchesCourse && matchesDuration;
+        return matchesFlavour && matchesFoodType && matchesDietaryPattern && matchesCourse && matchesDuration;
     });
 
     renderRecipes(filtered);
