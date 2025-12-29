@@ -10,42 +10,60 @@ All Recipes
 
 <div class="recipe-search" style="padding-top:10px;">
   <div class="all-recipes-filter-row" style="margin-left:1em;padding-bottom:0.5em;">
-    {% assign flavours = site.recipes | map: "flavour" | uniq | sort %}
+    {% assign all_flavours = "" | split: "" %}
+    {% for recipe in site.recipes %}
+      {% if recipe.flavour %}
+        {% assign items = recipe.flavour | split: "," %}
+        {% for item in items %}
+          {% assign flavour = item | strip %}
+          {% assign all_flavours = all_flavours | push: flavour %}
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
+    {% assign flavours = all_flavours | uniq | sort %}
     <select id="flavourFilter" class="recipe-search-select">
         <option value="">ALL FLAVOURS</option>
-        {% for f in flavours %}
-          {% assign flavour_items = f | split: ',' %}
-          {% for item in flavour_items %}
-            {% assign flavour = item | strip %}
-            <option value="{{ flavour | downcase }}">{{ flavour }}</option>
-            {% endfor %}
-          {% endfor %}
+        {% for flavour in flavours %}
+          <option value="{{ flavour | downcase }}">{{ flavour }}</option>
+        {% endfor %}
     </select>
 
     <div class="desktop-only">
-    {% assign food_types = site.recipes | map: "food_type" | uniq | sort %}
+    {% assign all_food_types = "" | split: "" %}
+    {% for recipe in site.recipes %}
+      {% if recipe.food_type %}
+        {% assign items = recipe.food_type | split: "," %}
+        {% for item in items %}
+          {% assign food_type = item | strip %}
+          {% assign all_food_types = all_food_types | push: food_type %}
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
+    {% assign food_types = all_food_types | uniq | sort %}
     <select id="foodTypeFilter" class="recipe-search-select">
         <option value="">ALL TYPES</option>
-        {% for f in food_types %}
-          {% assign food_types_items = f | split: ',' %}
-          {% for item in food_types_items %}
-            {% assign food_type = item | strip %}
-            <option value="{{ food_type | downcase }}">{{ food_type }}</option>
-            {% endfor %}
-          {% endfor %}
+        {% for food_type in food_types %}
+          <option value="{{ food_type | downcase }}">{{ food_type }}</option>
+        {% endfor %}
     </select>
     </div>
 
-    {% assign courses = site.recipes | map: "course" | uniq | sort %}
+    {% assign all_courses = "" | split: "" %}
+    {% for recipe in site.recipes %}
+      {% if recipe.course %}
+        {% assign items = recipe.course | split: "," %}
+        {% for item in items %}
+          {% assign course = item | strip %}
+          {% assign all_courses = all_courses | push: course %}
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
+    {% assign courses = all_courses | uniq | sort %}
     <select id="courseFilter" class="recipe-search-select">
         <option value="">ALL COURSES</option>
-        {% for f in courses %}
-          {% assign courses_items = f | split: ',' %}
-          {% for item in courses_items %}
-            {% assign course = item | strip %}
-            <option value="{{ course | downcase }}">{{ course }}</option>
-            {% endfor %}
-          {% endfor %}
+        {% for course in courses %}
+          <option value="{{ course | downcase }}">{{ course }}</option>
+        {% endfor %}
     </select>
 
     <select id="durationFilter" class="recipe-search-select">
@@ -60,22 +78,27 @@ All Recipes
       <option value="1440">24 hours</option>
     </select>
 
-    {% assign dietary_patterns = site.recipes | map: "dietary_pattern" | uniq | sort %}
+    {% assign all_dietary_patterns = "" | split: "" %}
+    {% for recipe in site.recipes %}
+      {% if recipe.dietary_pattern %}
+        {% assign items = recipe.dietary_pattern | split: "," %}
+        {% for item in items %}
+          {% assign dietary_pattern = item | strip %}
+          {% assign all_dietary_patterns = all_dietary_patterns | push: dietary_pattern %}
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
+    {% assign dietary_patterns = all_dietary_patterns | uniq | sort %}
     <select id="dietaryPatternFilter" class="recipe-search-select">
         <option value="">ALL DIETS</option>
-        {% for f in dietary_patterns %}
-          {% assign dietary_patterns_items = f | split: ',' %}
-          {% for item in dietary_patterns_items %}
-            {% assign dietary_pattern = item | strip %}
-            <option value="{{ dietary_pattern | downcase }}">{{ dietary_pattern }}</option>
-            {% endfor %}
-          {% endfor %}
+        {% for dietary_pattern in dietary_patterns %}
+          <option value="{{ dietary_pattern | downcase }}">{{ dietary_pattern }}</option>
+        {% endfor %}
     </select>
 
     <a href="#" id="clearFilters" class="clear-filters">Clear Filters</a>
     </div>
     <div id="recipeList" class="multi-column-list" style="margin-top:1em;"></div>
-
 </div>
 
 <script>

@@ -10,7 +10,7 @@ cook_time: 35 minutes
 total_time: 515   # in minutes for filter
 course: Main, Lunch, Dinner
 flavour: Warm, Savory, Spicy
-dietary_pattern: Lacto-veg, Veg, Includes dairy, No eggs, No meat
+dietary_pattern: Lacto-veg, Vegetarian, Includes dairy, No eggs, No meat
 food_type: Punjabi
 serving_original: 4
 serving: 4
