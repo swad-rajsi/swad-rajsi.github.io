@@ -94,23 +94,23 @@ document.addEventListener('click', function(e) {
         <table style="border-style: dotted; 
     border-width: 2px;border-color:gray;font-size: 1em;max-width:100%;">
           <tr style="font-weight:bold;">
-            <td class="swad-rajsi-td-border">Preparation Time</td>
-            <td class="swad-rajsi-td-border">Cook Time</td>
-            <td class="swad-rajsi-td-border" style="border-right: none !important;">Course</td>
+            <td class="swad-rajsi-td-border">Prep & Cook Time</td>
+            <td class="swad-rajsi-td-border">Type</td>
+            <td class="swad-rajsi-td-border" style="border-right: none !important;">Flavour</td>
           </tr>
           <tr>
-            <td class="swad-rajsi-td-border" style="border-bottom: 2px dotted gray;">{{page.prep_time}}</td>
-            <td class="swad-rajsi-td-border" style="border-bottom: 2px dotted gray;">{{page.cook_time}}</td>
-            <td class="swad-rajsi-td-border" style="border-bottom: 2px dotted gray; border-right: none !important;">{{page.course}}</td>
+            <td class="swad-rajsi-td-border" style="border-bottom: 2px dotted gray;">{{page.prep_time}} + {{page.cook_time}}</td>
+            <td class="swad-rajsi-td-border" style="border-bottom: 2px dotted gray;">{{page.food_type}}</td>
+            <td class="swad-rajsi-td-border" style="border-bottom: 2px dotted gray; border-right: none !important;">{{page.flavour}}</td>
           </tr>
           <tr style="font-weight:bold;">
-            <td class="swad-rajsi-td-border">Flavour</td>
-            <td class="swad-rajsi-td-border">Type</td>
+            <td class="swad-rajsi-td-border">Course</td>
+            <td class="swad-rajsi-td-border">Dietary Pattern</td>
             <td class="swad-rajsi-td-border" style="border-right: none !important;">Serving</td>
           </tr>
           <tr>
-            <td class="swad-rajsi-td-border">{{page.flavour}}</td>
-            <td class="swad-rajsi-td-border">{{page.food_type}}</td>
+            <td class="swad-rajsi-td-border">{{page.course}}</td>
+            <td class="swad-rajsi-td-border">{{page.dietary_pattern}}</td>
             <td class="swad-rajsi-td-border" style="border-right: none !important;">
               <div>
                 <div class="serving-box">
