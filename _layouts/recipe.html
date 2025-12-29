@@ -35,17 +35,24 @@ document.addEventListener('click', function(e) {
 <body>
   {% include navigation.html %}
 
-  <main class="recipe">
+  <main class="recipe" id="top">
 
-    <div id="top" class="swad-rajsi-centre-display"
-      style="margin-top:-0.5em;margin-bottom:1em;color: #d25fd2ff;font-size:2em;font-family:Georgia;justify-content:left !important;">
-      {{page.title}}</div>
+    <div id="title-en" class="lang-block swad-rajsi-centre-display recipe-title">{{page.title}}</div>
+    <div id="title-hi" class="lang-block swad-rajsi-centre-display recipe-title" style="display: none;">{{page.title_hi}}</div>
+    
+    {% if page.show_language_change_btn %}
+    <div style="display:flex; justify-content:flex-end; margin-bottom:1em;">
+      <button class="lang-btn active" onclick="setLang('en')">English</button>
+      <button class="lang-btn" onclick="setLang('hi')">हिंदी</button>
+    </div>
+    {% endif %}
+
     <div style="display: flex;justify-content: center;align-items: center;">
       {% if page.image %}
       <img src="{{ page.image | relative_url }}" onerror="this.style.display='none'" class="recipe-img">
       {% endif %}
     </div>
-    <div style="font-size: 1em;
+    <div id="tableContent-en" class="lang-block" style="font-size: 1em;
     border-style: double;
     border-width: 1px;
     border-color: #417505;
@@ -55,9 +62,24 @@ document.addEventListener('click', function(e) {
       <div style="padding: 10px;font-size: 20px;font-family:Georgia;color: #d25fd2ff;">Table of Contents</div>
       <div style="padding: 5px;"><a href="#Ingredients" style="text-decoration: none;"><span
             style="padding-right:10px;">1).</span><span>Ingredients</span></a></div>
-      <div style="padding: 5px;"><a href="#Steps" style="text-decoration: none;"><span
+      <div style="padding: 5px;"><a href="#steps-en" style="text-decoration: none;"><span
             style="padding-right:10px;">2).</span><span>Steps</span></a></div>
     </div>
+
+    <div id="tableContent-hi" class="lang-block" style="display:none; font-size: 1em;
+    border-style: double;
+    border-width: 1px;
+    border-color: #417505;
+    padding: 10px;
+    background-color: rgb(238, 233, 233);
+    max-width: 100%;border-radius: 4px;">
+      <div style="padding: 10px;font-size: 20px;font-family:Georgia;color: #d25fd2ff;">विषयसूची</div>
+      <div style="padding: 5px;"><a href="#Ingredients" style="text-decoration: none;"><span
+            style="padding-right:10px;">1).</span><span>सामग्री</span></a></div>
+      <div style="padding: 5px;"><a href="#steps-hi" style="text-decoration: none;"><span
+            style="padding-right:10px;">2).</span><span>खाना पकाने के चरण</span></a></div>
+    </div>
+
 
     <div id="Ingredients" style="font-size: 1em;
     border-style: double;
@@ -66,7 +88,8 @@ document.addEventListener('click', function(e) {
     padding: 10px;
     background-color: bisque;
     max-width: 100%;margin-top: 20px;border-radius: 4px;">
-      <div style="padding: 10px;font-size: 20px;font-family:Georgia;color: #d25fd2ff;">Ingredients</div>
+      <div id="ingredients-en" class="lang-block" style="padding: 10px;font-size: 20px;font-family:Georgia;color: #d25fd2ff;">Ingredients</div>
+      <div id="ingredients-hi" class="lang-block" style="display:none;padding: 10px;font-size: 20px;font-family:Georgia;color: #d25fd2ff;">सामग्री</div>
       <div style="padding:10px;max-width:100%;margin-bottom:20px;">
         <table style="border-style: dotted; 
     border-width: 2px;border-color:gray;font-size: 1em;max-width:100%;">
@@ -104,44 +127,34 @@ document.addEventListener('click', function(e) {
           </tr>
         </table>
       </div>
-      <div>
-        <ul style="padding-left:20px;">
-          {% for section in page.ingredients %}
-          <li style="font-size: 15px;padding-bottom:10px;">
-            <strong>{{ section.heading }}</strong>
-
-            <ol class="alpha-paren" style="margin-top: 5px;">
-              {% for item in section.items %}
-              <li class="swad-rajsi-ingredients ingredient-item" data-qty="{{ item.qty }}" data-unit="{{ item.unit }}"
-                data-scale="{{ item.scale }}" data-name="{{ item.name }}"><span class="qty">{{ item.qty
-                  }}</span> {{ item.unit }} 
-                  {% if item.link %}
-                    <a href="{{ item.link }}" target="_blank" rel="noopener">{{ item.name }}</a>
-                  {% else %}
-                    {{ item.name }}
-                  {% endif %}   
-                </li>
-              {% endfor %}
-            </ol>
-          </li>
-          {% endfor %}
-        </ul>
+      <div id="ingredients-en" class="lang-block">
+        {% assign ingredients = page.ingredients_en %}
+        {% include recipe-ingredients.html ingredients=ingredients %}
+      </div>
+      <div id="ingredients-hi" class="lang-block" style="display:none">
+        {% assign ingredients = page.ingredients_hi %}
+        {% include recipe-ingredients.html ingredients=ingredients %}
       </div>
     </div>
 
-    <div id="Steps"
+    <div id="steps-en" class="lang-block"
       style="padding:10px;color: #d25fd2ff;font-size:20px;font-family:Georgia;justify-content:left !important;padding-bottom:5px;">
       Steps</div>
-      {% for step in page.steps %}
-      <h4 style="font-size: 14px;margin-top: 5px;margin-bottom:3px;padding-top:5px;padding-left:15px;">{{ step.title }}</h4>
-      <ol class="swad-rajsi-ingredients">
-          {% for action in step.actions %}
-            <li>{{ action }}</li>
-          {% endfor %}
-      </ol>
-      {% endfor %}
+    <div id="steps-hi" class="lang-block" style="display:none;padding:10px;color: #d25fd2ff;font-size:20px;font-family:Georgia;justify-content:left !important;padding-bottom:5px;">
+      खाना पकाने के चरण</div>
+    <div id="steps-en" class="lang-block">
+      {% assign steps = page.steps_en %}
+      {% include recipe-steps.html steps=steps %}
+    </div>
+    <div id="steps-hi" class="lang-block" style="display:none">
+      {% assign steps = page.steps_hi %}
+      {% include recipe-steps.html steps=steps %}
+    </div>
 
-    <div class="swad-rajsi-ingredients">{{ content }}</div>
+    <div id="desc-en" class="lang-block swad-rajsi-ingredients">{{ page.description_en }}</div>
+
+    <div id="desc-hi" class="lang-block swad-rajsi-ingredients" style="display:none">{{ page.description_hi }}</div>
+
 
     <div style="display:flex;justify-content:right;gap:20px;padding-top: 2em;">
       <nav class="nav">
@@ -200,6 +213,24 @@ document.addEventListener('click', function(e) {
   });
 
   }
+</script>
+<script>
+function setLang(lang) {
+  document.querySelectorAll('.lang-block').forEach(el => {
+    el.style.display = 'none';
+  });
+
+  document.querySelectorAll(`[id$="-${lang}"]`).forEach(el => {
+    el.style.display = 'block';
+  });
+
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.classList.remove('active');
+  });
+
+  document.querySelector(`.lang-btn[onclick="setLang('${lang}')"]`)
+    .classList.add('active');
+}
 </script>
 
 </html>

@@ -281,18 +281,25 @@ input::placeholder {
 /* Start recipe search filter*/
 .all-recipes-filter-row {
   display: flex;
-  gap: 1em; /* horizontal space between filters */
-  flex-wrap: nowrap; /* do not wrap on desktop */
+  gap: 1em;
+  /* horizontal space between filters */
+  flex-wrap: nowrap;
+  /* do not wrap on desktop */
 }
 
 @media (max-width: 768px) {
   .all-recipes-filter-row {
-    flex-wrap: wrap; /* allow wrapping on mobile */
-    gap: 0.5em 1em; /* vertical gap 0.5em, horizontal 1em */
+    flex-wrap: wrap;
+    /* allow wrapping on mobile */
+    gap: 0.5em 1em;
+    /* vertical gap 0.5em, horizontal 1em */
   }
+
   .filter-row select {
-    flex: 1 1 100%; /* each select takes full width */
-    margin-bottom: 0.5em; /* space between rows */
+    flex: 1 1 100%;
+    /* each select takes full width */
+    margin-bottom: 0.5em;
+    /* space between rows */
   }
 }
 
@@ -349,7 +356,7 @@ input::placeholder {
 
 .contact-me-form-group label {
   display: block;
-  padding-left:10px;
+  padding-left: 10px;
 }
 
 /* The Underline Effect */
@@ -394,8 +401,9 @@ input::placeholder {
   overflow-y: auto;
   /* Ensures scrollable if text exceeds 5 lines */
   display: block;
-  margin-top:20px;
+  margin-top: 20px;
 }
+
 /*End Contact us page*/
 
 /* Start recipe ordered ol count*/
@@ -416,8 +424,34 @@ ol.alpha-paren li::before {
   position: absolute;
   left: -1.5rem;
 }
+
 /* End recipe ordered ol count */
 
 .recipe-page-bottom-anchor:hover {
   border-bottom: 1px solid #eba0eb;
+}
+
+/* Start eng to hindi*/
+.lang-btn {
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  background: #f9f9f9;
+  cursor: pointer;
+  font-size: 0.7em;
+  border-radius: 4px;
+}
+
+.lang-btn.active {
+  background: #d25fd2ff;
+  color: white;
+}
+
+/* End eng to hindi*/
+
+.recipe-title {
+  margin-top: -0.5em;
+  color: #d25fd2ff;
+  font-size: 2em;
+  font-family: Georgia;
+  justify-content: left !important;
 }

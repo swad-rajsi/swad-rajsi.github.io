@@ -1,0 +1,8 @@
+{% for step in steps %}
+    <h4 style="font-size: 14px;margin-top: 5px;margin-bottom:3px;padding-top:5px;padding-left:15px;">{{ step.title }}</h4>
+    <ol class="swad-rajsi-ingredients">
+        {% for action in step.actions %}
+        <li>{{ action }}</li>
+        {% endfor %}
+    </ol>
+{% endfor %}

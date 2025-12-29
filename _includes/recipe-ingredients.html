@@ -1,0 +1,21 @@
+<ul style="padding-left:20px;">
+    {% for section in ingredients %}
+    <li style="font-size: 15px;padding-bottom:10px;">
+    <strong>{{ section.heading }}</strong>
+
+    <ol class="alpha-paren" style="margin-top: 5px;">
+        {% for item in section.items %}
+        <li class="swad-rajsi-ingredients ingredient-item" data-qty="{{ item.qty }}" data-unit="{{ item.unit }}"
+        data-scale="{{ item.scale }}" data-name="{{ item.name }}"><span class="qty">{{ item.qty
+            }}</span> {{ item.unit }} 
+            {% if item.link %}
+            <a href="{{ item.link }}" target="_blank" rel="noopener">{{ item.name }}</a>
+            {% else %}
+            {{ item.name }}
+            {% endif %}   
+        </li>
+        {% endfor %}
+    </ol>
+    </li>
+    {% endfor %}
+</ul>
