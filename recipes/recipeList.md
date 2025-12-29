@@ -22,7 +22,7 @@ All Recipes
           {% endfor %}
     </select>
 
-    <div style="display:none;">
+    <div class="desktop-only">
     {% assign food_types = site.recipes | map: "food_type" | uniq | sort %}
     <select id="foodTypeFilter" class="recipe-search-select">
         <option value="">ALL TYPES</option>
