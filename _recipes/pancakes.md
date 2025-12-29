@@ -10,7 +10,7 @@ cook_time: 15 minutes
 total_time: 20  # in minutes for filter
 course: Breakfast
 flavour: Sweet
-dietary_pattern: Lacto-ovo-vegetarian, Includes dairy, Includes eggs, No meat
+dietary_pattern: Lacto-ovo-veg, Includes dairy, Includes eggs, No meat
 food_type: Continental
 serving_original: 4
 serving: 4

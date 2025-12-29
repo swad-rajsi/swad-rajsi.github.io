@@ -6,8 +6,6 @@ permalink: /recipes/
 <!-- <div class="swad-rajsi-centre-display" style="margin-top:-30px;margin-bottom:10px;color: #d25fd2ff;font-size:20px;font-family:Georgia;justify-content:left !important;" >
 All Recipes
 </div> -->
-
-<!-- <h3>DEBUG: Total recipes = {{ site.recipes | size }}</h3> -->
 {% include recipe-gallery.html %}
 
 <div class="recipe-search" style="padding-top:10px;">
@@ -24,6 +22,7 @@ All Recipes
           {% endfor %}
     </select>
 
+    <div style="display:none;">
     {% assign food_types = site.recipes | map: "food_type" | uniq | sort %}
     <select id="foodTypeFilter" class="recipe-search-select">
         <option value="">ALL TYPES</option>
@@ -35,6 +34,7 @@ All Recipes
             {% endfor %}
           {% endfor %}
     </select>
+    </div>
 
     {% assign courses = site.recipes | map: "course" | uniq | sort %}
     <select id="courseFilter" class="recipe-search-select">
@@ -53,13 +53,24 @@ All Recipes
       <option value="15">15 minutes</option>
       <option value="30">30 minutes</option>
       <option value="45">45 minutes</option>
-      <option value="60">1 Hour</option>
-      <option value="90">1.5 Hours</option>
-      <option value="120">2 Hours</option>
-      <option value="480">8 Hours</option>
-      <option value="1440">24 Hours</option>
+      <option value="60">1 hour</option>
+      <option value="90">1.5 hours</option>
+      <option value="120">2 hours</option>
+      <option value="480">8 hours</option>
+      <option value="1440">24 hours</option>
     </select>
 
+    {% assign dietary_patterns = site.recipes | map: "dietary_pattern" | uniq | sort %}
+    <select id="dietaryPatternFilter" class="recipe-search-select">
+        <option value="">ALL DIETS</option>
+        {% for f in dietary_patterns %}
+          {% assign dietary_patterns_items = f | split: ',' %}
+          {% for item in dietary_patterns_items %}
+            {% assign dietary_pattern = item | strip %}
+            <option value="{{ dietary_pattern | downcase }}">{{ dietary_pattern }}</option>
+            {% endfor %}
+          {% endfor %}
+    </select>
 
     <a href="#" id="clearFilters" class="clear-filters">Clear Filters</a>
     </div>
@@ -75,6 +86,7 @@ All Recipes
           "url": "{{ recipe.url | relative_url }}",
           "flavour": "{{ recipe.flavour | escape }}",
           "food_type": "{{ recipe.food_type | escape }}",
+          "dietary_pattern": "{{ recipe.dietary_pattern | escape }}",
           "course": "{{ recipe.course | escape }}",
           "total_time":{{ recipe.total_time }}
       } {% if forloop.last == false %}, {% endif %}
@@ -107,11 +119,13 @@ All Recipes
   function filterRecipes() {
     const flavour = flavourFilter.value.toLowerCase();
     const food_type = foodTypeFilter.value.toLowerCase();
+    const dietary_pattern = dietaryPatternFilter.value.toLowerCase();
     const course = courseFilter.value.toLowerCase();
     const duration = Number(durationFilter.value);
     const filtered = recipes.filter(r => {
         const matchesFlavour = flavour === "" || r.flavour.toLowerCase().includes(flavour);
         const matchesFoodType = food_type === "" || r.food_type.toLowerCase().includes(food_type);
+         const matchesFoodType = dietary_pattern === "" || r.dietary_pattern.toLowerCase().includes(dietary_pattern);
         const matchesCourse = course === "" || r.course.toLowerCase().includes(course);
         const matchesDuration = duration === 144000 || r.total_time <= duration;
         return matchesFlavour && matchesFoodType && matchesCourse && matchesDuration;
@@ -122,6 +136,7 @@ All Recipes
 
   flavourFilter.addEventListener("change", filterRecipes);
   foodTypeFilter.addEventListener("change", filterRecipes);
+  dietaryPatternFilter.addEventListener("change", filterRecipes);
   courseFilter.addEventListener("change", filterRecipes);
   durationFilter.addEventListener("change", filterRecipes);
 
@@ -129,16 +144,10 @@ All Recipes
   e.preventDefault(); // Prevent default anchor behavior
   flavourFilter.value = "";
   foodTypeFilter.value = "";
+  dietaryPatternFilter.value = "";
   courseFilter.value = "";
   durationFilter.value = 144000;
   renderRecipes(recipes); // Show all recipes
 });
 
 </script>
-<!-- <ul>
-{% for recipe in site.recipes %}
-  <li>
-    <a href="{{ recipe.url }}"  class="swad-rajsi-recipe-link">{{ recipe.title }}</a>
-  </li>
-{% endfor %}
-</ul> -->
