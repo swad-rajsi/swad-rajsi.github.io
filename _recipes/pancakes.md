@@ -2,6 +2,7 @@
 layout: recipe
 title: "Fluffy Pancakes"
 title_hi: "फ्लफी पैनकेक"
+filter_title: "Pancakes"
 lang_default: en
 show_language_change_btn: true
 published: true

@@ -106,6 +106,7 @@ All Recipes
     {% for recipe in site.recipes %}
       {
           "title": "{{ recipe.title | escape }}",
+          "filter_title": "{{ recipe.filter_title | escape }}",
           "url": "{{ recipe.url | relative_url }}",
           "flavour": "{{ recipe.flavour | escape }}",
           "food_type": "{{ recipe.food_type | escape }}",
@@ -130,7 +131,7 @@ All Recipes
         <ul>
           ${list.map(r => `
             <li>
-              <a href="${r.url}" class="swad-rajsi-recipe-link">${r.title}</a>
+              <a href="${r.url}" class="swad-rajsi-recipe-link">${r.filter_title}</a>
             </li>
           `).join('')}
         </ul>

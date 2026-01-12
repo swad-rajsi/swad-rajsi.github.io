@@ -2,6 +2,7 @@
 layout: recipe
 title: "Gajrela - Carrot Halwa - Gajar Halwa"
 title_hi: "गजरेला - गाजर का हलवा"
+filter_title: "Carrot Halwa"
 lang_default: en
 show_language_change_btn: true
 published: true

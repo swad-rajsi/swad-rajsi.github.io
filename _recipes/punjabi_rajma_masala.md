@@ -1,7 +1,8 @@
 ---
 layout: recipe
-title: "Punjabi Rajma Masala"
-title_hi: "पंजाबी राजमा मसाला"
+title: "Punjabi Rajma"
+title_hi: "पंजाबी राजमा"
+filter_title: "Punjabi Rajma"
 lang_default: en
 show_language_change_btn: true
 published: true
