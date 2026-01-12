@@ -1,6 +1,6 @@
 ---
 layout: recipe
-title: "Khoya - Mawa - Kova (From Ricotta Cheese)"
+title: "Khoya – Mawa – Kova (From Ricotta Cheese)"
 title_hi: "खोया / मावा / कोवा (रिकोटा चीज़ से)"
 filter_title: "Khoya (From Ricotta)"
 lang_default: en
@@ -23,11 +23,11 @@ ingredients_en:
   - heading: Preparation
     items:
       - qty: 475
-        unit: gm
-        name: Ricotta Cheese
+        unit: g
+        name: Ricotta cheese
       - qty: 2
         unit: tablespoons
-        name: Clarified butter or ghee
+        name: Clarified butter (ghee)
 
 ingredients_hi:
   - heading: तैयारी
@@ -42,22 +42,22 @@ ingredients_hi:
 steps_en:
   - title: How to Cook
     actions:
-      - Add clarified butter/ ghee in a deep non stick wok or pan.
-      - Add ricotta cheese to it.
-      - Roast, stirring frequently, for 20 minutes on low flame until it turns grainy.
-      - Let it air dry for 2 hours before use. This can be served with some caramalized sugar or can be used for making desserts like halwa, barfi, gulab jamun.
+      - Heat clarified butter (ghee) in a deep non-stick pan or wok over a low flame.
+      - Add the ricotta cheese to the pan.
+      - Cook, stirring frequently, for about 20 minutes on low heat until it turns grainy and moisture evaporates.
+      - Let it air-dry for about 2 hours before use. It can be served with caramelized sugar or used to make desserts such as halwa, barfi, or gulab jamun.
 
 steps_hi:
   - title: बनाने की विधि
     actions:
-      - एक गहरी नॉन-स्टिक कढ़ाही या पैन में घी डालें।
+      - एक गहरी नॉन-स्टिक कढ़ाही या पैन में धीमी आंच पर घी गरम करें।
       - इसमें रिकोटा चीज़ डालें।
-      - धीमी आंच पर लगातार चलाते हुए 20 मिनट तक भूनें, जब तक यह दानेदार न हो जाए।
-      - उपयोग से पहले इसे 2 घंटे तक हवा में सूखने दें। इसे कैरामेलाइज़्ड चीनी के साथ परोसा जा सकता है या हलवा, बर्फी, गुलाब जामुन जैसी मिठाइयों में इस्तेमाल किया जा सकता है।
+      - धीमी आंच पर लगातार चलाते हुए लगभग 20 मिनट तक पकाएं, जब तक नमी सूख जाए और यह दानेदार न हो जाए।
+      - उपयोग से पहले इसे लगभग 2 घंटे तक हवा में सूखने दें। इसे कैरामेलाइज़्ड चीनी के साथ परोसा जा सकता है या हलवा, बर्फी और गुलाब जामुन जैसी मिठाइयों में इस्तेमाल किया जा सकता है।
 
 description_en: |
-  Khoya (or mawa) is used as a rich, dairy base for countless Indian sweets like Gulab Jamun, Peda, Barfi, Kalakand, and Halwa, providing creaminess and substance. Beyond desserts, its rich texture makes it great for thickening savory curries (like Koftas) or as a filling for pastries (like Gujiya). It's essentially concentrated milk solids, transforming into sweet or savory dishes. 
+  Khoya (or mawa) is a rich dairy base used in countless Indian sweets such as gulab jamun, peda, barfi, kalakand, and halwa. It adds creaminess, body, and depth of flavor. Beyond desserts, its dense texture also makes it suitable for thickening savory curries (like koftas) or as a filling for festive pastries such as gujiya. Essentially, khoya is concentrated milk solids that can be transformed into both sweet and savory dishes.
 
 description_hi: |
-  खोया (या मावा) का उपयोग गुलाब जामुन, पेड़ा, बर्फी, कलाकंद और हलवा जैसी अनगिनत भारतीय मिठाइयों के लिए एक समृद्ध, दूध आधारित आधार के रूप में किया जाता है, जो उन्हें मलाईदार और गाढ़ापन प्रदान करता है। मिठाइयों के अलावा, इसकी समृद्ध बनावट इसे नमकीन करी (जैसे कोफ्ते) को गाढ़ा करने या पेस्ट्री (जैसे गुजिया) में भरने के लिए उपयुक्त बनाती है। यह मूल रूप से गाढ़ा दूध ठोस पदार्थ है, जिसे मीठे या नमकीन व्यंजनों में रूपांतरित किया जा सकता है।
+  खोया (या मावा) का उपयोग गुलाब जामुन, पेड़ा, बर्फी, कलाकंद और हलवा जैसी अनेक भारतीय मिठाइयों में एक समृद्ध, दूध-आधारित सामग्री के रूप में किया जाता है। यह मिठाइयों को मलाईदार बनावट और गाढ़ापन प्रदान करता है। मिठाइयों के अलावा, इसकी गाढ़ी बनावट इसे नमकीन करी (जैसे कोफ्ते) को गाढ़ा करने या गुजिया जैसी पारंपरिक पेस्ट्री में भरावन के रूप में भी उपयुक्त बनाती है। मूल रूप से, खोया गाढ़ा किया हुआ दूध ठोस पदार्थ है, जिसे मीठे और नमकीन दोनों प्रकार के व्यंजनों में इस्तेमाल किया जा सकता है।
 ---
