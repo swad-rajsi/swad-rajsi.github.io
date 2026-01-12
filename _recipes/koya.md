@@ -1,6 +1,7 @@
 ---
 layout: recipe
 title: "Khoya - Mawa - Kova (From Ricotta Cheese)"
+title_hi: "खोया / मावा / कोवा (रिकोटा चीज़ से)"
 filter_title: "Khoya (From Ricotta)"
 lang_default: en
 show_language_change_btn: true
@@ -26,7 +27,17 @@ ingredients_en:
       - qty: 2
         unit: tablespoons
         name: Clarified butter or ghee
-      
+
+ingredients_hi:
+  - heading: तैयारी
+    items:
+      - qty: 475
+        unit: ग्राम
+        name: रिकोटा चीज़
+      - qty: 2
+        unit: बड़े चम्मच
+        name: घी
+
 steps_en:
   - title: How to Cook
     actions:
@@ -34,6 +45,14 @@ steps_en:
       - Add ricotta cheese to it.
       - Roast, stirring frequently, for 20 minutes on low flame until it turns grainy.
       - Let it air dry for 2 hours before use. This can be served with some caramalized sugar or can be used for making desserts like halwa, barfi, gulab jamun.
+
+steps_hi:
+  - title: बनाने की विधि
+    actions:
+      - एक गहरी नॉन-स्टिक कढ़ाही या पैन में घी डालें।
+      - इसमें रिकोटा चीज़ डालें।
+      - धीमी आंच पर लगातार चलाते हुए 20 मिनट तक भूनें, जब तक यह दानेदार न हो जाए।
+      - उपयोग से पहले इसे 2 घंटे तक हवा में सूखने दें। इसे कैरामेलाइज़्ड चीनी के साथ परोसा जा सकता है या हलवा, बर्फी, गुलाब जामुन जैसी मिठाइयों में इस्तेमाल किया जा सकता है।
 
 description_en: |
   Khoya (or mawa) is used as a rich, dairy base for countless Indian sweets like Gulab Jamun, Peda, Barfi, Kalakand, and Halwa, providing creaminess and substance. Beyond desserts, its rich texture makes it great for thickening savory curries (like Koftas) or as a filling for pastries (like Gujiya). It's essentially concentrated milk solids, transforming into sweet or savory dishes. 
