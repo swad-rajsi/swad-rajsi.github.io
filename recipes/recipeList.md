@@ -182,7 +182,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Only if scrollable
   if (gallery.scrollWidth > gallery.clientWidth) {
     setTimeout(() => {
-      gallery.scrollBy({ left: 850, behavior: "smooth" });
+      gallery.scrollBy({ left: 500, behavior: "smooth" });
 
       // fade out effect after scroll
       setTimeout(() => {
