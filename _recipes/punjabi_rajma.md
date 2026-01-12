@@ -15,7 +15,7 @@ dietary_pattern: Lacto-veg, Vegetarian, Includes dairy, No eggs, No meat
 food_type: Punjabi
 serving_original: 4
 serving: 4
-permalink: /recipes/punjabi-rajma-masala/
+permalink: /recipes/punjabi-rajma/
 image: /assets/images/recipes/punjabi_rajma_masala.jpg
 ingredients_en:
   - heading: Soaking & Pressure Cooking
