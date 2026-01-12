@@ -8,11 +8,24 @@
         <li class="swad-rajsi-ingredients ingredient-item" data-qty="{{ item.qty }}" data-unit="{{ item.unit }}"
         data-scale="{{ item.scale }}" data-name="{{ item.name }}"><span class="qty">{{ item.qty
             }}</span> {{ item.unit }} 
-            {% if item.link %}
-            <a href="{{ item.link }}" target="_blank" rel="noopener">{{ item.name }}</a>
+            {% assign link_value = item.link %}
+            {% if link_value %}
+                {% if link_value contains '://' %}
+                    <!-- External link -->
+                    <a href="{{ link_value }}" target="_blank" rel="noopener noreferrer">{{ item.name }}</a>
+                {% else %}
+                    <!-- Internal recipe link (slug) -->
+                    {% assign linked_recipe = site.recipes | where: "slug", link_value | first %}
+                    {% if linked_recipe %}
+                        <a href="{{ linked_recipe.url | relative_url }}">{{ item.name }}</a>
+                    {% else %}
+                        {{ item.name }}
+                    {% endif %}
+                {% endif %}
             {% else %}
-            {{ item.name }}
-            {% endif %}   
+                {{ item.name }}
+            {% endif %}
+
         </li>
         {% endfor %}
     </ol>

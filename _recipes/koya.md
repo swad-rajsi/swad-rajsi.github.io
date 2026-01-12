@@ -16,6 +16,7 @@ food_type: South Asian
 serving_original: 1
 serving: 1
 permalink: /recipes/khoya-mawa-kova/
+slug: khoya-mawa-kova
 image: /assets/images/recipes/khoya.jpg
 
 ingredients_en:

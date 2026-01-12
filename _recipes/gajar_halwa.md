@@ -32,6 +32,7 @@ ingredients_en:
       - qty: 200
         unit: grams
         name: Khoya/ Mawa (Dried Thickened Milk solids)
+        link: khoya-mawa-kova
       - qty: 1/2
         unit: cup
         name: Cashew
@@ -54,6 +55,7 @@ ingredients_hi:
       - qty: 200
         unit: ग्राम
         name: खोया/ मावा
+        link: khoya-mawa-kova
       - qty: 1/2
         unit: कप
         name: काजू
