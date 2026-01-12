@@ -1,7 +1,7 @@
 ---
 layout: recipe
 title: "Tomato Soup"
-title_hi: ""
+title_hi: "टमाटर का सूप"
 filter_title: "Tomato Soup"
 lang_default: en
 show_language_change_btn: true
@@ -17,6 +17,7 @@ serving_original: 2
 serving: 2
 permalink: /recipes/tomato-soup/
 image: /assets/images/recipes/tomato_soup.jpg
+
 ingredients_en:
   - heading: Preparation
     items:
@@ -53,7 +54,44 @@ ingredients_en:
       - qty: 1
         unit: tablespoons
         name: Butter or Fresh Cream
-      
+
+ingredients_hi:
+  - heading: तैयारी
+    items:
+      - qty: 2
+        unit: 
+        name: टमाटर
+      - qty: 1/2
+        unit: 
+        name: प्याज़
+      - qty: 1/2
+        unit: 
+        name: शलगम या गाजर
+      - qty: 1
+        unit: कली
+        name: लहसुन
+      - qty: 1
+        unit: इंच
+        name: अदरक
+      - qty: 2
+        unit: कप
+        name: पानी
+      - qty: 2/3
+        unit: छोटा चम्मच
+        name: नमक (स्वादानुसार)
+      - qty: 1/3
+        unit: छोटा चम्मच
+        name: काली मिर्च पाउडर
+      - qty: 1/3
+        unit: छोटा चम्मच
+        name: ताज़ी बन तुलसी/ धनिया/ पुदीना – वैकल्पिक
+
+  - heading: सजावट
+    items:
+      - qty: 1
+        unit: बड़े चम्मच
+        name: मक्खन या फ्रेश क्रीम
+
 steps_en:
   - title: How to Cook
     actions:
@@ -62,6 +100,15 @@ steps_en:
       - Cool and grind them in mixer.
       - Cook again in same cooker with lid open for 5 minutes. Adjust water consistency if it is too thick.
       - Soup is ready to be served. Serve it warm with butter or fresh cream.
+
+steps_hi:
+  - title: बनाने की विधि
+    actions:
+      - सब्ज़ियों को धोकर छील लें और बड़े टुकड़ों में काट लें।
+      - पहले भाग की सारी सामग्री कुकर में डालें और 1 सीटी आने तक पकाएं।
+      - ठंडा होने पर मिक्सर में पीस लें।
+      - उसी कुकर में ढक्कन खुला रखकर 5 मिनट तक दोबारा पकाएं। अगर सूप गाढ़ा लगे तो पानी मिलाकर गाढ़ापन समायोजित करें।
+      - सूप परोसने के लिए तैयार है। इसे गरमागरम मक्खन या फ्रेश क्रीम के साथ परोसें।
 
 description_en: |
   Tomato soup is a versatile dish that can be prepared with either fresh or canned tomatoes and served hot or cold. It is highly customizable, with variations ranging from smooth restaurant-style purees to chunky, herb-infused versions.
