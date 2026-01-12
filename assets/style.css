@@ -216,9 +216,12 @@ input::placeholder {
   gap: 12px;
   overflow-x: auto;
   padding-inline: 12px;
+  scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
   scroll-padding-left: 12px;
   scroll-padding-right: 12px;
+  -webkit-overflow-scrolling: touch;
+  position: relative;
 }
 
 .recipe-gallery .gallery-item {

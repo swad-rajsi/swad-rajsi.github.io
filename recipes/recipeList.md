@@ -175,4 +175,23 @@ All Recipes
   renderRecipes(recipes); // Show all recipes
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const gallery = document.querySelector(".recipe-gallery");
+  if (!gallery) return;
+
+  // Only if scrollable
+  if (gallery.scrollWidth > gallery.clientWidth) {
+    setTimeout(() => {
+      gallery.scrollBy({ left: 850, behavior: "smooth" });
+
+      // fade out effect after scroll
+      setTimeout(() => {
+        gallery.style.transition = "opacity 1.5s ease";
+        gallery.style.opacity = "0.85";
+      }, 600);
+
+    }, 800);
+  }
+});
+
 </script>
