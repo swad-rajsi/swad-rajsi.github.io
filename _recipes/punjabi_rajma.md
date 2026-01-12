@@ -16,7 +16,7 @@ food_type: Punjabi
 serving_original: 4
 serving: 4
 permalink: /recipes/punjabi-rajma/
-image: /assets/images/recipes/punjabi_rajma_masala.jpg
+image: /assets/images/recipes/punjabi_rajma.jpg
 ingredients_en:
   - heading: Soaking & Pressure Cooking
     items:
