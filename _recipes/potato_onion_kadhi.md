@@ -97,29 +97,131 @@ ingredients_en:
         name: Curry leaves
         scale: false
 
+ingredients_hi:
+  - heading: घोल बनाने के लिए
+    items:
+      - qty: 1/2
+        unit: कप
+        name: बेसन
+      - qty: 1
+        unit: छोटी चम्मच
+        name: हल्दी पाउडर
+      - qty: 1/2
+        unit: छोटी चम्मच
+        name: लाल मिर्च पाउडर
+      - qty: 1
+        unit: कप
+        name: दही
+      - qty: 4
+        unit: कप
+        name: पानी
+
+  - heading: कढ़ी बनाने के लिए
+    items:
+      - qty: 1
+        unit: बड़ा चम्मच
+        name: तेल
+      - qty: 1
+        unit: छोटी चम्मच
+        name: जीरा
+      - qty: 1
+        unit: छोटी चम्मच
+        name: राई
+      - qty: 1
+        unit: छोटी चम्मच
+        name: धनिया के बीज
+      - qty: 1/4
+        unit: छोटी चम्मच
+        name: मेथी दाना
+      - qty: 1/4
+        unit: छोटी चम्मच
+        name: हींग
+      - qty: 1
+        unit: इंच
+        name: अदरक, कद्दूकस किया हुआ
+      - qty: 1
+        unit:
+        name: हरी मिर्च, बारीक कटी हुई
+      - qty: 1
+        unit: बड़ा
+        name: प्याज, लंबा कटा हुआ
+      - qty: 1
+        unit: बड़ा
+        name: आलू, छोटे टुकड़ों में कटा हुआ
+      - qty: 10
+        unit:
+        name: करी पत्ता
+      - qty: 2
+        unit: छोटी चम्मच
+        name: नमक (स्वादानुसार)
+      - qty: 1
+        unit: बड़ा चम्मच
+        name: कसूरी मेथी, कुचली हुई
+      - qty:
+        unit:
+        name: हरा धनिया, बारीक कटा हुआ (सजाने के लिए)
+
+  - heading: तड़के के लिए
+    items:
+      - qty: 1
+        unit: बड़ा चम्मच
+        name: घी
+      - qty: 1
+        unit:
+        name: साबुत सूखी लाल मिर्च, आधी टूटी हुई
+      - qty: 1
+        unit: चुटकी
+        name: हींग
+      - qty:
+        unit: कुछ
+        name: करी पत्ता
+        scale: false
 
 steps_en:
   - title: Preparation
     actions:
-      - Whisk and mix Gram flour, turmeric, chilli powder, curd and water until it is smooth and has no lumps.
-      - Prepare grated ginger, chopped chilli.
-      - Chop onion julienne style.
-      - Chop potato in small cubes. 
+      - In a bowl, whisk together gram flour, turmeric, red chilli powder, curd, and water until smooth and lump-free.
+      - Grate the ginger and finely chop the green chilli.
+      - Peel and slice the onion lengthwise (julienne cut).
+      - Peel and cut the potato into small cubes.
 
   - title: Prepare Curry
     actions:
-      - Heat ghee/oil in a pan on medium flame.
-      - Add cumin seeds, mustard seeds, coriander seeds, fenugreek seeds, asafoetida (heeng) and sauté briefly until they splutter.
-      - Add ginger, chilli and curry leaves. Cook until ginger is golden brown
-      - Add chopped onions and sauté till they are translucent.
-      - Add potato and saute for few minutes.
-      - Stir bowl mixture as prepared above and add it in pan.
-      - Keep stirring the mixture until bubbles appear.
-      - Turn down flame to low. Cover the half pan with lid  and let it simmer for 30 minutes until raw smell of gram flour disappears and gravy thickens. Make sure to stir atleast once every 10 minutes. 
-      - Adjust consistency by adding more water if it thickens too much.
-      - Add salt, dried fenugreek leaves (Kasuri methi), fresh chopped coriander leaves.
-      - Prepare tempering in separate pan with ghee/ clarified butter, broken dried red chilli, Asafoetida (Heeng) and curry leaves.
-      - Add it on the prepared Kadhi before serving.
+      - Heat oil in a heavy-bottomed pan over medium heat.
+      - Add cumin seeds, mustard seeds, coriander seeds, fenugreek seeds, and asafoetida. Saute briefly until the seeds splutter.
+      - Add ginger, green chilli, and curry leaves. Cook until the ginger turns lightly golden.
+      - Add the sliced onions and saute until they become translucent.
+      - Add the cubed potato and saute for a few minutes.
+      - Stir the prepared gram flour mixture and slowly pour it into the pan, stirring continuously.
+      - Keep stirring until the mixture starts to bubble.
+      - Reduce the heat to low, partially cover the pan, and let the kadhi simmer for about 30 minutes, stirring at least once every 10 minutes, until the raw taste of gram flour disappears and the gravy thickens.
+      - Adjust the consistency by adding water if the kadhi becomes too thick.
+      - Add salt, crushed dried fenugreek leaves (kasuri methi), and fresh chopped coriander leaves.
+      - In a separate pan, prepare the tempering by heating ghee with dried red chilli, asafoetida, and curry leaves.
+      - Pour the tempering over the prepared kadhi just before serving.
+
+steps_hi:
+  - title: तैयारी
+    actions:
+      - एक कटोरे में बेसन, हल्दी, लाल मिर्च पाउडर, दही और पानी को अच्छी तरह फेंट लें ताकि कोई गांठ न रहे।
+      - अदरक को कद्दूकस करें और हरी मिर्च को बारीक काट लें।
+      - प्याज को लंबाई में पतला काटें।
+      - आलू छीलकर छोटे टुकड़ों में काट लें।
+
+  - title: कढ़ी बनाएं
+    actions:
+      - मध्यम आंच पर एक भारी तले की कड़ाही में तेल या घी गरम करें।
+      - इसमें जीरा, राई, धनिया के बीज, मेथी दाना और हींग डालें और चटकने तक भूनें।
+      - अब अदरक, हरी मिर्च और करी पत्ता डालें और अदरक के हल्का सुनहरा होने तक भूनें।
+      - कटे हुए प्याज डालें और पारदर्शी होने तक भूनें।
+      - आलू डालकर कुछ मिनट तक भूनें।
+      - तैयार बेसन का घोल हिलाते हुए धीरे-धीरे कड़ाही में डालें।
+      - लगातार चलाते रहें जब तक इसमें उबाल न आने लगे।
+      - आंच धीमी कर दें, कड़ाही को आंशिक रूप से ढकें और लगभग 30 मिनट तक पकने दें। हर 10 मिनट में चलाते रहें ताकि कढ़ी तले में न लगे।
+      - आवश्यकता अनुसार थोड़ा पानी डालकर कढ़ी की गाढ़ापन समायोजित करें।
+      - अब नमक, कसूरी मेथी और कटा हुआ हरा धनिया डालें।
+      - अलग पैन में घी गरम कर सूखी लाल मिर्च, हींग और करी पत्ता डालकर तड़का तैयार करें।
+      - परोसने से ठीक पहले यह तड़का कढ़ी के ऊपर डालें।
 
 description_en: |
    Potato Onion Kadhi is a comforting North Indian yogurt-based curry featuring sautéed potatoes (aloo) and onions (pyaz). Unlike the classic Punjabi Kadhi Pakora, which uses deep-fried fritters, this version uses sliced vegetables directly in the gravy, making it quicker and lighter. The word "Kadhi" is derived from the Hindi word kadhna, which means "to reduce" or "slow-cook," referring to the process of simmering the mixture until it reaches a thick, creamy consistency.
