@@ -1,22 +1,22 @@
 ---
 layout: recipe
-title: "Tira"
+title: "Tiramisu - Indian fusion"
 title_hi: ""
-filter_title: "Potato Onion Kadhi"
+filter_title: "Tiramisu (Indian fusion)"
 lang_default: en
 show_language_change_btn: true
 published: false
-prep_time: 10 minutes
-cook_time: 35 minutes
-total_time: 45   # in minutes for filter
-course: Main, Lunch, Dinner
-flavour: Warm, Savory, Spicy
+prep_time: 0 minutes
+cook_time: 20 minutes
+total_time: 20   # in minutes for filter
+course: Dessert
+flavour: Sweet, Creamy
 dietary_pattern: Lacto-veg, Vegetarian, Includes dairy, No eggs, No meat
-food_type: Indian
-serving_original: 6
-serving: 6
-permalink: /recipes/potato-onion-kadhi/
-image: /assets/images/recipes/potato_onion_kadhi.jpg
+food_type: Fusion
+serving_original: 8
+serving: 8
+permalink: /recipes/tiramisu-indian-fusion/
+#image: /assets/images/recipes/potato_onion_kadhi.jpg
 ingredients_en:
   - heading: Bowl mix
     items:
