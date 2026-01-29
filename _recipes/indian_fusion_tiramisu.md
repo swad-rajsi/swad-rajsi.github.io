@@ -1,11 +1,11 @@
 ---
 layout: recipe
-title: "Potato Onion Kadhi"
-title_hi: "आलू प्याज कढ़ी"
+title: "Tira"
+title_hi: ""
 filter_title: "Potato Onion Kadhi"
 lang_default: en
 show_language_change_btn: true
-published: true
+published: false
 prep_time: 10 minutes
 cook_time: 35 minutes
 total_time: 45   # in minutes for filter
