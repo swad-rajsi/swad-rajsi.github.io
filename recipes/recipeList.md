@@ -3,6 +3,8 @@ layout: default
 title: "All Recipes"
 permalink: /recipes/
 ---
+<!-- For this md file , generate ingredients_hi (ingredients list in hindi), steps_hi (steps in hindi) , do spell check all over, do grammatical check all over, and see if I need to rewrite sentences in step_en section to make it professional for a cooking blog --- 
+ -->
 <!-- <div class="swad-rajsi-centre-display" style="margin-top:-30px;margin-bottom:10px;color: #d25fd2ff;font-size:20px;font-family:Georgia;justify-content:left !important;" >
 All Recipes
 </div> -->
