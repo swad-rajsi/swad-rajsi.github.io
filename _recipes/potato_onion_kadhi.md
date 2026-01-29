@@ -16,7 +16,7 @@ food_type: Indian
 serving_original: 6
 serving: 6
 permalink: /recipes/potato-onion-kadhi/
-#image: /assets/images/recipes/potato_onion_kadhi.jpg
+image: /assets/images/recipes/potato_onion_kadhi.jpg
 ingredients_en:
   - heading: Bowl mix
     items:
